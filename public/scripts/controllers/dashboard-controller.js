@@ -1,3 +1,30 @@
+var clusterStyles = [
+  {
+    textColor: 'white',
+    url: '/assets/images/bluedot.gif',
+    height: 50,
+    width: 50
+  },
+ {
+    textColor: 'white',
+    url: '/assets/images/bluedot.gif',
+    height: 50,
+    width: 50
+  },
+ {
+    textColor: 'white',
+    url: '/assets/images/bluedot.gif',
+    height: 50,
+    width: 50
+  }
+];
+
+var mcOptions = {
+	    gridSize: 50,
+	    styles: clusterStyles,
+	    maxZoom: 15
+};
+
 var app = angular.module('myApp', ['ngMap']);
 
   app.controller('mapController', function($scope, $http, StreetView) {
@@ -30,7 +57,7 @@ var app = angular.module('myApp', ['ngMap']);
           $scope.stores.push(marker); 
         }
         console.log('finished loading scripts/starbucks.json', '$scope.stores', $scope.stores.length);
-        $scope.markerClusterer = new MarkerClusterer(map, $scope.stores, {});
+        $scope.markerClusterer = new MarkerClusterer(map, $scope.stores, mcOptions);
         $scope.fullScreenToggle.click();
       });
     });
