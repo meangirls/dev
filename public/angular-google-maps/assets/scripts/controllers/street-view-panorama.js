@@ -4,8 +4,8 @@ angular.module('app', ['uiGmapgoogle-maps'])
     $scope.map = {
       id: 1,
       center: {
-        latitude: 38.889484,
-        longitude: -77.035279
+        latitude: 34.05, 
+        longitude: -118.25
       },
       zoom: 16,
       refresh: false,
