@@ -60,9 +60,9 @@ var app = angular.module('myApp', ['ngMap']);
 
           $scope.clients.push(marker); 
         }
-        console.log('finished loading scripts/starbucks.json', '$scope.clients', $scope.clients.length);
+        //console.log('finished loading scripts/starbucks.json', '$scope.clients', $scope.clients.length);
         $scope.markerClusterer = new MarkerClusterer(map, $scope.clients, {});
-        $scope.fullScreenToggle.click();
+        //$scope.fullScreenToggle.click();
       });
     });
     $scope.showStreetView = function() {

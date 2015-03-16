@@ -42,7 +42,7 @@
     <table>
       <tr>
         <td> Address </td> 
-        <td> {{client.street_combined}} <br/> 
+        <td> {{client.address}} <br/> 
           {{client.city}} {{client.postal_code}} {{client.country}} <br/>
         </td>
       </tr>
@@ -74,7 +74,7 @@
   
     <div id="map-container" ng-controller="mapController">
       <map zoom="4" center="[39.50, -98.35]"></map>
-      <div client-info class="custom-control">Store Info</div>
+      <div client-info class="custom-control">Client Info</div>
     </div>
     </div>
     
