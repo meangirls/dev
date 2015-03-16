@@ -1,9 +1,9 @@
 var clusterStyles = [
   {
     textColor: 'white',
-    url: '/assets/images/78.png',
-    height: 78,
-    width: 78
+    url: '/assets/images/bluedot.gif',
+    height: 50,
+    width: 50
   },
  {
     textColor: 'white',
@@ -20,9 +20,9 @@ var clusterStyles = [
 ];
 
 var mcOptions = {
-	    gridSize: 50,
-	    styles: clusterStyles,
-	    maxZoom: 15
+    gridSize: 50,
+    styles: clusterStyles,
+    maxZoom: 15
 };
 
 var app = angular.module('myApp', ['ngMap']);
@@ -46,7 +46,7 @@ var app = angular.module('myApp', ['ngMap']);
             StreetView.getPanorama(map).then(function(panoId) {
               $scope.panoId = panoId;
             });
-            map.setZoom(18);
+            //map.setZoom(18);
             map.setCenter(this.getPosition());
             $scope.storeInfo.show();
           });
