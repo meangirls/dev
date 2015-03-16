@@ -2,46 +2,48 @@ var app = angular.module('myApp', ['ngMap']);
 
   app.controller('mapController', function($scope, $http, StreetView) {
     $scope.map;
-    $scope.stores = [];
+    $scope.clients = [];
     $scope.$on('mapInitialized', function(event, evtMap) {
       map = evtMap;
       $scope.map = map;
-      console.log('loading scripts/starbucks.json');
-      $http.get('scripts/starbucks.json').success( function(stores) {
-        for (var i=0; i<stores.length; i++) {
-          var store = stores[i];
-          store.position = new google.maps.LatLng(store.latitude,store.longitude);
-          store.title = store.name;
-
-          var marker = new google.maps.Marker(store);
+      console.log('loading scripts/clients.json');
+      $http.get('/advisor-dashboard/scripts/clients.json').success( function(clients) {
+        for (var i=0; i<clients.length; i++) {
+          var client = clients[i];
+          client.position = new google.maps.LatLng(client.latitude,client.longitude);
+          client.title = client.name.first + " " + client.name.last + " " + client.address;
+	  
+          var marker = new google.maps.Marker(client);
+	  //marker.setIcon(client.markerImage);
+	  
           google.maps.event.addListener(marker, 'click', function() {
-            $scope.store = this;
+            $scope.client = this;
             StreetView.getPanorama(map).then(function(panoId) {
               $scope.panoId = panoId;
             });
-            map.setZoom(18);
+            //map.setZoom(18);
             map.setCenter(this.getPosition());
-            $scope.storeInfo.show();
+            $scope.clientInfo.show();
           });
           google.maps.event.addListener(map, 'click', function() {
-            $scope.storeInfo.hide();
+            $scope.clientInfo.hide();
           });
 
-          $scope.stores.push(marker); 
+          $scope.clients.push(marker); 
         }
-        console.log('finished loading scripts/starbucks.json', '$scope.stores', $scope.stores.length);
-        $scope.markerClusterer = new MarkerClusterer(map, $scope.stores, {});
+        console.log('finished loading scripts/starbucks.json', '$scope.clients', $scope.clients.length);
+        $scope.markerClusterer = new MarkerClusterer(map, $scope.clients, {});
         $scope.fullScreenToggle.click();
       });
     });
     $scope.showStreetView = function() {
       StreetView.setPanorama(map, $scope.panoId);
-      $scope.storeInfo.hide();
+      $scope.clientInfo.hide();
     };
     $scope.showHybridView = function() {
       map.setMapTypeId(google.maps.MapTypeId.HYBRID);
       map.setTilt(45);
-      $scope.storeInfo.hide();
+      $scope.clientInfo.hide();
     }
   });
 
@@ -59,8 +61,8 @@ var app = angular.module('myApp', ['ngMap']);
     }
   });
 
-  app.directive('storeInfo', function() {
-    var StoreInfo = function(s, e, a) {
+  app.directive('clientInfo', function() {
+    var ClientInfo = function(s, e, a) {
       this.scope = s;
       this.element = e;
       this.attrs = a;
@@ -73,9 +75,9 @@ var app = angular.module('myApp', ['ngMap']);
       }
     };
     return {
-      templateUrl: 'store-info.html',
+      templateUrl: 'client-info.html',
       link: function(scope, e, a) {
-        scope.storeInfo= new StoreInfo(scope, e, a);
+        scope.clientInfo= new ClientInfo(scope, e, a);
       }
     }
   });
