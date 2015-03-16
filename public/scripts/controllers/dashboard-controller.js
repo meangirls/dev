@@ -110,7 +110,7 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
       }
     };
     return {
-      templateUrl: 'client-info.html',
+      templateUrl: 'templates/client-info.html',
       link: function(scope, e, a) {
         scope.clientInfo= new ClientInfo(scope, e, a);
       }
