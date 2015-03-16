@@ -7,6 +7,8 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
+ 
   <!-- build:js scripts/ng-map.min.js -->
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/dashboard-controller.js"></script>
@@ -36,27 +38,7 @@
   </style>
 
   
-  <script type="text/ng-template" id="client-info.html">
-    <a class="hide-link" ng-click="clientInfo.hide()" href="">x</a>
-    <h3> {{client.name}} </h3>
-    <table>
-      <tr>
-        <td> Address </td> 
-        <td> {{client.address}} <br/> 
-          {{client.city}} {{client.postal_code}} {{client.country}} <br/>
-        </td>
-      </tr>
-      <tr>
-        <td> Coordinates </td> 
-        <td> 
-          Latitude: {{client.latitude}} <br/>
-          Longitude: {{client.longitude}}
-        </td>
-      </tr>
-    </table>
-    <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
-    <a href="" ng-click="showHybridView()">Satellite View</a>
-  </script>
+<script src="templates/client-info.html" type="text/ng-template"></script>
 
 </head>
 
@@ -79,6 +61,23 @@
 		<div class="ns-body container">
 			<div class="row section-margin">
 				<div class="span12">
+				
+
+  <tabset>
+    <tab heading="Static title">Static content</tab>
+    <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
+      {{tab.content}}
+    </tab>
+    <tab select="alertMe()">
+      <tab-heading>
+        <i class="glyphicon glyphicon-bell"></i> Alert!
+      </tab-heading>
+      I've got an HTML heading, and a select callback. Pretty cool!
+    </tab>
+  </tabset>				
+				
+				
+				
 				 	<div id="map-container" ng-controller="mapController">
       					<map zoom="4" center="[39.50, -98.35]"></map>
      				 <div client-info class="custom-control">Client Info</div>

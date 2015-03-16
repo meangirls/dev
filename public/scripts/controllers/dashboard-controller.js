@@ -27,9 +27,15 @@ var mcOptions = {
     maxZoom: 15
 };
 
-var app = angular.module('myApp', ['ngMap']);
+var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
 
   app.controller('mapController', function($scope, $http, StreetView) {
+	  
+	  $scope.tabs = [
+	                 { title:'Dynamic Title 1', content:'Dynamic content 1' },
+	                 { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
+	               ];
+	  
     $scope.map;
     $scope.clients = [];
     $scope.$on('mapInitialized', function(event, evtMap) {
