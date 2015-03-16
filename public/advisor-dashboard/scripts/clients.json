@@ -1,0 +1,114 @@
+﻿[
+  {
+    "id": "55073dfab924bbc9425d34fd",
+    "name": {
+      "first": "Susanne",
+      "last": "Chandler",
+      "middle": "B"
+    },
+    "address": "626 Gold Street, Nile, Illinois, 784",
+    "latitude": -60.201559,
+    "longitude": -103.487062,
+    "totalAssets": 737998353,
+    "taxId": 9507806791,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "55073dfa0f388012b8636443",
+    "name": {
+      "first": "Blanchard",
+      "last": "Perez",
+      "middle": "B"
+    },
+    "address": "773 Orange Street, Williamson, Alabama, 5694",
+    "latitude": -2.496218,
+    "longitude": -111.635349,
+    "totalAssets": 28698067,
+    "taxId": 9670873236,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "55073dfa2a962e7f297c9ac0",
+    "name": {
+      "first": "Marcie",
+      "last": "Moore",
+      "middle": "C"
+    },
+    "address": "366 Hastings Street, Como, Wyoming, 6606",
+    "latitude": 59.207012,
+    "longitude": -111.414632,
+    "totalAssets": 858991357,
+    "taxId": 4782969661,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "55073dfa050d049723ab540c",
+    "name": {
+      "first": "Herring",
+      "last": "Aguirre",
+      "middle": "A"
+    },
+    "address": "736 Vandervoort Place, Cliffside, Colorado, 1543",
+    "latitude": -21.013461,
+    "longitude": -176.634689,
+    "totalAssets": 747106886,
+    "taxId": 5638641984,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55073dfa8bcd97f7be9b7e09",
+    "name": {
+      "first": "Craig",
+      "last": "Singleton",
+      "middle": "A"
+    },
+    "address": "832 Bath Avenue, Edinburg, Nebraska, 2559",
+    "latitude": 75.886389,
+    "longitude": -145.810793,
+    "totalAssets": 29293802,
+    "taxId": 7077474024,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "55073dfa508d24aee540551f",
+    "name": {
+      "first": "Owens",
+      "last": "Vazquez",
+      "middle": "C"
+    },
+    "address": "998 Rockaway Parkway, Bend, Arizona, 3405",
+    "latitude": -86.160025,
+    "longitude": -85.859044,
+    "totalAssets": 402668078,
+    "taxId": 4904287610,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55073dfa19a0233055e1d88e",
+    "name": {
+      "first": "Richards",
+      "last": "Steele",
+      "middle": "C"
+    },
+    "address": "901 Herkimer Place, Alden, Minnesota, 5908",
+    "latitude": -66.342027,
+    "longitude": -163.41725,
+    "totalAssets": 596755598,
+    "taxId": 5973364944,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  }
+]
