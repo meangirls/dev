@@ -1,22 +1,23 @@
 var clusterStyles = [
-  {
+  
+ {
     textColor: 'white',
-    url: '/assets/images/bluedot.gif',
-    height: 50,
-    width: 50
+    url: '/assets/images/78.png',
+    height: 78,
+    width: 78
   },
  {
     textColor: 'white',
     url: '/assets/images/66.png',
     height: 66,
     width: 66
-  },
+},
  {
     textColor: 'white',
     url: '/assets/images/56.png',
     height: 56,
     width: 56
-  }
+}
 ];
 
 var mcOptions = {
