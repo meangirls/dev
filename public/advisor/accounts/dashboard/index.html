@@ -62,23 +62,34 @@
 
 <body>
 
-  <hr />
-  
-  <div class="row">
-   <div class="row">
-    <div class="span12">
-    	<h1>Advisor Dashboard</h1>
-    </div>
-    </div>
-  <div class="span12">
-  
-    <div id="map-container" ng-controller="mapController">
-      <map zoom="4" center="[39.50, -98.35]"></map>
-      <div client-info class="custom-control">Client Info</div>
-    </div>
-    </div>
-    
+<div class="ns-header-wide client-search">
+	<div class="ns-outer-control">
+		<div class="ns-body container">
+			<div class="row section-margin">
+				<div class="span12">
+				<img src="/assets/images/topnav.png" width="1581" height="212">
+				
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+
+<div class="ns-body-wide fullwidth">
+	<div class="ns-outer-control">
+		<div class="ns-body container">
+			<div class="row section-margin">
+				<div class="span12">
+				 	<div id="map-container" ng-controller="mapController">
+      					<map zoom="4" center="[39.50, -98.35]"></map>
+     				 <div client-info class="custom-control">Client Info</div>
+     			</div>
+     		</div>
+     	</div>
+    </div>
+</div>
+				
+    
 </body>
 
 </html>
