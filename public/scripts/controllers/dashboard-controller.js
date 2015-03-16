@@ -1,46 +1,31 @@
 var clusterStyles = [
   {
     textColor: 'white',
-<<<<<<< HEAD
     url: 'path/to/smallclusterimage.png',
-=======
     url: '/assets/images/bluedot.gif',
->>>>>>> fe781c939b62d954715913606150342a808b4933
     height: 50,
     width: 50
   },
  {
     textColor: 'white',
-<<<<<<< HEAD
     url: 'path/to/mediumclusterimage.png',
-=======
     url: '/assets/images/bluedot.gif',
->>>>>>> fe781c939b62d954715913606150342a808b4933
     height: 50,
     width: 50
   },
  {
     textColor: 'white',
-<<<<<<< HEAD
     url: 'path/to/largeclusterimage.png',
-=======
     url: '/assets/images/bluedot.gif',
->>>>>>> fe781c939b62d954715913606150342a808b4933
     height: 50,
     width: 50
   }
 ];
 
 var mcOptions = {
-<<<<<<< HEAD
     gridSize: 50,
     styles: clusterStyles,
     maxZoom: 15
-=======
-	    gridSize: 50,
-	    styles: clusterStyles,
-	    maxZoom: 15
->>>>>>> fe781c939b62d954715913606150342a808b4933
 };
 
 var app = angular.module('myApp', ['ngMap']);
