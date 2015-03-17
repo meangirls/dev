@@ -8,11 +8,15 @@
   <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.js"></script>
   <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
- 
+  <script src="//www.google.com/jsapi"></script>
+  
+
   <!-- build:js scripts/ng-map.min.js -->
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/dashboard-controller.js"></script>
+  <script src="/scripts/controllers/table-controller.js"></script>
   <script src="/scripts/directives/map_controller.js"></script>
+  <script src="/scripts/directives/google-charts.js"></script>
   <script src="/scripts/directives/map.js"></script>
   <script src="/scripts/directives/marker.js"></script>
   <script src="/scripts/directives/shape.js"></script>
@@ -23,13 +27,10 @@
   <!-- endbuild -->
   <script src="/scripts/markerclusterer.js"></script>
   
-<script src="/libs/angular/angular.js"></script>
-	  <script src="/libs/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
-	<script src="/libs/d3/d3.js"></script>
-    <script src="/libs/nvd3/nv.d3.js"></script>
-	
-	<!-- <script src="/libs/angular-charts/dist/angular-charts.js"></script> -->
-	
+  <script src="/libs/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+  <script src="/scripts/angular-pageslide-directive.js"></script>
+  <script src="/libs/d3/d3.js"></script>
+  <script src="/libs/nvd3/nv.d3.js"></script>	
 	
 <link rel="stylesheet" type="text/css" href="/assets/main.css">
 
@@ -40,15 +41,16 @@
 
     div#map-container.full-screen {position:absolute; display:block; width:100%; height:100%; top: 0; left: 0}
     div#map-container div[full-screen-toggle] { cursor: pointer; position: absolute; top: 5px; right: 100px; }
-    div#map-container div[client-info] { position: absolute; display: none; top: 5px; right: 5px; bottom: 5px; width: 40%  }
+    div#map-container div[client-info] { position: absolute; display: none; top: 0px; right: 0px; bottom: 5px; width: 40%; height:600px  }
     div#map-container div[client-info] a.hide-link { float:right  }
     div#map-container div[client-info] table { width: 100% }
-    div#map-container div[client-info] table td { text-align: left; padding: 5px; border: 1px solid #ccc  }
+    div#map-container div[client-info] table td { text-align: left; padding: 5px; border: 0px solid #ccc  }
     map {display:block; width:100%; height:100%;}
   </style>
 
   
 <script src="templates/client-info.html" type="text/ng-template"></script>
+
 
 </head>
 
@@ -66,18 +68,19 @@
     	  	<map zoom="4" center="[39.50, -98.35]"></map>
 			<div client-info class="custom-control">Client Info</div>		    
 		</div>
-
+		
    		 </tab>
+   	</tab>
     
     <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
      
     </tab>
   
     <tab heading="Client List: Graph View">
-     Bar Graph goes here
+     <div asset-mix-chart id="assetMixChart" style="width:100%"></div>
     </tab>
       <tab heading="Client List: Table View">
-   		Table goes here
+   			
     </tab>
     <tab heading="Control Panel">
    		Table goes here
@@ -87,12 +90,11 @@
     </tab>
   </tabset>	
 
- 
-
-
 <div>
 	<img src="/assets/images/footer.png" width="1581" height="591" border="0">
 </div>
+
+
 
 </body>
 

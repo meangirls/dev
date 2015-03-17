@@ -27,7 +27,13 @@ var mcOptions = {
     maxZoom: 15
 };
 
-var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'nvd3ChartDirectives']);
+
+var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'pageslide-directive', 'nvd3ChartDirectives']);
+app.config(function($sceProvider) {
+  // Completely disable SCE.  For demonstration purposes only!!
+  // Do not use in new projects.
+  $sceProvider.enabled(false);
+});
 
 
 
@@ -59,6 +65,8 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'nvd3ChartDirectives
     
   app.controller('mapController', function($scope, $http, StreetView) {
 	  
+	  $scope.checked;
+	  
 	  $scope.tabs = [
 	                 { title:'Dynamic Title 1', content:'Dynamic content 1' },
 	                 { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
@@ -66,42 +74,54 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'nvd3ChartDirectives
 	  
     $scope.map;
     $scope.clients = [];
+    
     $scope.$on('mapInitialized', function(event, evtMap) {
       map = evtMap;
       $scope.map = map;
       console.log('loading scripts/clients.json');
-      $http.get('/advisor-dashboard/scripts/clients.json').success( function(clients) {
+      $http.get('/dashboard/clients').success( function(clients) {
+    	
         for (var i=0; i<clients.length; i++) {
           var client = clients[i];
           client.position = new google.maps.LatLng(client.latitude,client.longitude);
           client.title = client.name.first + " " + client.name.last + " " + client.address;
-          client.icon = {
-        	  path: google.maps.SymbolPath.CIRCLE,
-          		scale: 8,
-          		fillOpacity: 1,
-          		fillColor: 'red',
-          		strokeColor: '#ccc',
-          		strokeWeight: 1
-          }
+         
+    	  client.icon = {
+    		scale: (client.markerImage == "large") ? 12 : 8,
+    		path: google.maps.SymbolPath.CIRCLE,
+    		fillOpacity: 1,
+    		fillColor: (client.alert == true) ? 'yellow' : ((client.financialTransaction == true ? 'green' : 'red')),
+    		strokeColor: (client.alert == true && client.financialTransaction == true) ? 'green' : '#333',
+    		strokeWeight: (client.alert == true && client.financialTransaction == true) ? 5 : 2
+    	  }
+                 
 	  
           var marker = new google.maps.Marker(client);
 	  //marker.setIcon(client.markerImage);
 	  
           google.maps.event.addListener(marker, 'click', function() {
             $scope.client = this;
+			$http.get('/dashboard/alerts/79949426').success(function(alerts) {
+				$scope.alerts = alerts;
+			});
+			$http.get('/dashboard/transactions').success(function(transactions) {
+				$scope.transactions = transactions;
+			});
             StreetView.getPanorama(map).then(function(panoId) {
               $scope.panoId = panoId;
             });
             //map.setZoom(18);
-            map.setCenter(this.getPosition());
+            //map.setCenter(this.getPosition());
             $scope.clientInfo.show();
           });
-          google.maps.event.addListener(map, 'click', function() {
-            $scope.clientInfo.hide();
-          });
+        
 
           $scope.clients.push(marker); 
         }
+        
+        google.maps.event.addListener(map, 'click', function() {
+      	  $scope.clientInfo.hide();
+        });
         //console.log('finished loading scripts/starbucks.json', '$scope.clients', $scope.clients.length);
         $scope.markerClusterer = new MarkerClusterer(map, $scope.clients, mcOptions);
         //$scope.fullScreenToggle.click();
@@ -138,11 +158,10 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'nvd3ChartDirectives
       this.element = e;
       this.attrs = a;
       this.show = function() {
-        this.element.css('display', 'block');
-        this.scope.$apply();
+    	  this.scope.checked = true;
       }
       this.hide = function() {
-        this.element.css('display', 'none');
+    	this.scope.checked = false;
       }
     };
     return {
