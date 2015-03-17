@@ -6,7 +6,7 @@ app.directive("assetMixChart", function() {
 			var colors = [ '#1E5AA0', '#33AEE5', '#008F45', '#81B24F',
 					'#F2B900' ];
 			
-			var data = new google.visualization.DataTable();
+			
 			//var newData = [['Name', 'Total Assets']];
 			
 //			var data = google.visualization.arrayToDataTable([
@@ -20,7 +20,7 @@ app.directive("assetMixChart", function() {
 //					[ 'Client Name', 'Total Assets' ]
 //			]);
 		
-			console.log($scope.tabs);
+			//console.log($scope.tabs);
 			
 			for (var i=0; i<= 10; i++) {
 				data.addRow(["Name of Client", 320]);
@@ -32,7 +32,7 @@ app.directive("assetMixChart", function() {
 				height:600
 			};
 			
-			var chart = new google.visualization.BarChart(document.getElementById('assetMixChart'));
+			var chart = new google.visualization.BarChart(document.getElementById('barChart'));
 			chart.draw(data, options);
 			
 		}, true);
