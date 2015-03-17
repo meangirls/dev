@@ -97,7 +97,6 @@ app.config(function($sceProvider) {
             //map.setZoom(18);
             //map.setCenter(this.getPosition());
             $scope.clientInfo.show();
-            
           });
         
 
