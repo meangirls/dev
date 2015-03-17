@@ -59,28 +59,16 @@ app.config(function($sceProvider) {
           var client = clients[i];
           client.position = new google.maps.LatLng(client.latitude,client.longitude);
           client.title = client.name.first + " " + client.name.last + " " + client.address;
-          
-          if (client.markerImage == "large") {
-        	  client.icon = {
-        			  scale: 12,
-        			  path: google.maps.SymbolPath.CIRCLE,
-        		fillOpacity: 1,
-        		fillColor: 'red',
-        		strokeColor: '#333',
-        		strokeWeight: 2
-        	  }
-          }
-          else {
-        	  client.icon = {
-                	  path: google.maps.SymbolPath.CIRCLE,
-                  		scale: 8,
-                  		fillOpacity: 1,
-                  		fillColor: 'red',
-                		strokeColor: '#333',
-                  		strokeWeight: 2
-                  }
-          }
          
+    	  client.icon = {
+    		scale: (client.markerImage == "large") ? 12 : 8,
+    		path: google.maps.SymbolPath.CIRCLE,
+    		fillOpacity: 1,
+    		fillColor: (client.alert == true) ? 'yellow' : ((client.financialTransaction == true ? 'green' : 'red')),
+    		strokeColor: (client.alert == true && client.financialTransaction == true) ? 'green' : '#333',
+    		strokeWeight: (client.alert == true && client.financialTransaction == true) ? 5 : 2
+    	  }
+                 
 	  
           var marker = new google.maps.Marker(client);
 	  //marker.setIcon(client.markerImage);
