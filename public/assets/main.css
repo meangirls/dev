@@ -2237,5 +2237,11 @@ span.icon{display:inline-block;width:16px;height:1px;padding:8px 0 7px 0;margin:
     background-position: -176px -96px;
 }
 
+div#client-info .close.btn {
+	padding:0 0 0 5px;
+}
+
+
+
 
 
