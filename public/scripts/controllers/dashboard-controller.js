@@ -27,9 +27,11 @@ var mcOptions = {
     maxZoom: 15
 };
 
-var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
+var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'pageslide-directive']);
 
   app.controller('mapController', function($scope, $http, StreetView) {
+	  
+	  $scope.checked;
 	  
 	  $scope.tabs = [
 	                 { title:'Dynamic Title 1', content:'Dynamic content 1' },
@@ -81,13 +83,16 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
             //map.setZoom(18);
             //map.setCenter(this.getPosition());
             $scope.clientInfo.show();
+            
           });
-          google.maps.event.addListener(map, 'click', function() {
-            $scope.clientInfo.hide();
-          });
+        
 
           $scope.clients.push(marker); 
         }
+        
+        google.maps.event.addListener(map, 'click', function() {
+      	  $scope.clientInfo.hide();
+        });
         //console.log('finished loading scripts/starbucks.json', '$scope.clients', $scope.clients.length);
         $scope.markerClusterer = new MarkerClusterer(map, $scope.clients, mcOptions);
         //$scope.fullScreenToggle.click();
@@ -124,15 +129,10 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
       this.element = e;
       this.attrs = a;
       this.show = function() {
- 
-
-    	    this.element.css('display', 'block');
-    	  this.scope.$apply();
-    	
-    	
+    	  this.scope.checked = true;
       }
       this.hide = function() {
-        this.element.css('display', 'none');
+    	this.scope.checked = false;
       }
     };
     return {
