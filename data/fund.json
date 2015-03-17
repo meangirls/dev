@@ -1,0 +1,174 @@
+[
+  {
+	"acctNbr": "79949426",
+	"fundNbr": "02",
+	"fundBalance": 99374.52,
+	"fundName": "AMCAP Fund",
+	"fundQuotron": "AMCPX",
+	"fundNAV": 28.40,
+	"fundShares": 3499.10
+	},
+	{
+	"acctNbr": "79949426",
+	"fundNbr": "08",
+	"fundBalance": "99374.52",
+	"fundName": "The Bond Fund of America",
+	"fundQuotron": "ABNDX",
+	"fundNAV": 12.83,
+	"fundShares": 7745.48
+	},
+	{
+	"acctNbr": "79949426",
+	"fundNbr": "16",
+	"fundBalance": 99374.52,
+	"fundName": "EuroPacific Growth Fund",
+	"fundQuotron": "AEPGX",
+	"fundNAV": 48.80,
+	"fundShares": 2043.74
+	},
+	{
+	"acctNbr": "53986937",
+	"fundNbr": "1002",
+	"fundBalance": 99374.52,
+	"fundName": "AMCAP Fund",
+	"fundQuotron": "CAFAX",
+	"fundNAV": 28.40,
+	"fundShares": 3499.10
+	},
+	{
+	"acctNbr": "53986937",
+	"fundNbr": "1008",
+	"fundBalance": 99374.52,
+	"fundName": "The Bond Fund of America",
+	"fundQuotron": "CFAAX",
+	"fundNAV": 12.83,
+	"fundShares": 7745.48
+	},
+	{
+	"acctNbr": "53986937",
+	"fundNbr": "1016",
+	"fundBalance": 99374.52,
+	"fundName": "EuroPacific Growth Fund",
+	"fundQuotron": "CEUAX",
+	"fundNAV": 48.80,
+	"fundShares": 2043.74
+	},
+	 {
+	"acctNbr": "69311574",
+	"fundNbr": "02",
+	"fundBalance": 99374.52,
+	"fundName": "AMCAP Fund",
+	"fundQuotron": "AMCPX",
+	"fundNAV": 28.40,
+	"fundShares": 3499.10
+	},
+	{
+	"acctNbr": "69311574",
+	"fundNbr": "08",
+	"fundBalance": 99374.52,
+	"fundName": "The Bond Fund of America",
+	"fundQuotron": "ABNDX",
+	"fundNAV": 12.83,
+	"fundShares": 7745.48
+	},
+	{
+	"acctNbr": "69311574",
+	"fundNbr": "16",
+	"fundBalance": 99374.52,
+	"fundName": "EuroPacific Growth Fund",
+	"fundQuotron": "AEPGX",
+	"fundNAV": 48.80,
+	"fundShares": 2043.74
+	},
+	{
+	"acctNbr": "53960729",
+	"fundNbr": "02",
+	"fundBalance": 99374.52,
+	"fundName": "AMCAP Fund",
+	"fundQuotron": "AMCPX",
+	"fundNAV": 28.40,
+	"fundShares": 3499.10
+	},
+	{
+	"acctNbr": "53960729",
+	"fundNbr": "08",
+	"fundBalance": 99374.52,
+	"fundName": "The Bond Fund of America",
+	"fundQuotron": "ABNDX",
+	"fundNAV": 12.83,
+	"fundShares": 7745.48
+	},
+	{
+	"acctNbr": "53960729",
+	"fundNbr": "16",
+	"fundBalance": 99374.52,
+	"fundName": "EuroPacific Growth Fund",
+	"fundQuotron": "AEPGX",
+	"fundNAV": 48.80,
+	"fundShares": 2043.74
+	},
+	{
+	"acctNbr": "91427179",
+	"fundNbr": "1002",
+	"fundBalance": 99374.52,
+	"fundName": "AMCAP Fund",
+	"fundQuotron": "CAFAX",
+	"fundNAV": 28.40,
+	"fundShares": 3499.10
+	},
+	{
+	"acctNbr": "91427179",
+	"fundNbr": "1008",
+	"fundBalance": 99374.52,
+	"fundName": "The Bond Fund of America",
+	"fundQuotron": "CFAAX",
+	"fundNAV": 12.83,
+	"fundShares": 7745.48
+	},
+	{
+	"acctNbr": "91427179",
+	"fundNbr": "1016",
+	"fundBalance": 99374.52,
+	"fundName": "EuroPacific Growth Fund",
+	"fundQuotron": "CEUAX",
+	"fundNAV": 48.80,
+	"fundShares": 2043.74
+	},
+	{
+	"acctNbr": "55145783",
+	"fundNbr": "02",
+	"fundBalance": 104233.56,
+	"fundName": "AMCAP Fund",
+	"fundQuotron": "AMCPX",
+	"fundNAV": 28.40,
+	"fundShares": 3670.10
+	},
+	{
+	"acctNbr": "55145783",
+	"fundNbr": "08",
+	"fundBalance": 104233.56,
+	"fundName": "The Bond Fund of America",
+	"fundQuotron": "ABNDX",
+	"fundNAV": 12.83,
+	"fundShares": 8124.21
+	},
+	{
+	"acctNbr": "55145699",
+	"fundNbr": "02",
+	"fundBalance": 104233.56,
+	"fundName": "AMCAP Fund",
+	"fundQuotron": "AMCPX",
+	"fundNAV": 28.40,
+	"fundShares": 3670.10
+	},
+	{
+	"acctNbr": "55145699",
+	"fundNbr": "08",
+	"fundBalance": 104233.56,
+	"fundName": "The Bond Fund of America",
+	"fundQuotron": "ABNDX",
+	"fundNAV": 12.83,
+	"fundShares": 8124.21
+	}
+	
+] 	
