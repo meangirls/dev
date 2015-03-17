@@ -14,6 +14,7 @@
   <!-- build:js scripts/ng-map.min.js -->
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/dashboard-controller.js"></script>
+  <script src="/scripts/controllers/bar-chart-controller.js"></script>
   <script src="/scripts/controllers/table-controller.js"></script>
   <script src="/scripts/directives/map_controller.js"></script>
   <script src="/scripts/directives/google-charts.js"></script>
@@ -77,7 +78,11 @@
     </tab>
   
     <tab heading="Client List: Graph View">
-     <div asset-mix-chart id="assetMixChart" style="width:100%"></div>
+    <div ng-controller="barChartController" id="barChart">
+        <div ng-repeat="client in allClients">
+          {{client.name.first}}
+        </div>
+      </div>
     </tab>
       <tab heading="Client List: Table View">
    			

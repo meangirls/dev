@@ -49,14 +49,14 @@
 </div>
 
 <div id="transactions" class="section-margin">
-	<h3 class="hr hr-thick">Transactions</h3>
-	<table class="row-separators">
+	<h3 class="hr hr-thick">Recent Transactions</h3>
+	<table class="row-separators full-width">
 		<thead>
 			<tr>
-				<th>Date</th>
-				<th>Fund</th>
-				<th>Category</th>
-				<th>Amount</th>
+				<th scope="col">Date</th>
+				<th scope="col">Fund</th>
+				<th scope="col">Category</th>
+				<th class="align-right" scope="col">Amount</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -64,7 +64,7 @@
 				<td>{{transaction.date}}</td>
 				<td>{{transaction.fundName}}</td>
 				<td>{{transaction.category}}</td>
-				<td>{{transaction.amount}}</td>
+				<td class="align-right">{{transaction.amount | currency}}</td>
 			</tr>
 		</tbody>
 	</table>
