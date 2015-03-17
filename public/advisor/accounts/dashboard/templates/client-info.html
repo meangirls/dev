@@ -1,7 +1,11 @@
-<a class="hide-link" ng-click="clientInfo.hide()" href="">x</a>
-<h3> {{client.name}} </h3>
+<pageslide ps-open="checked" ps-target="#client-info" ps-close="true"></pageslide> 
+<div style="padding:20px" id="client-info" class="inverse">
+                    
+               
+<a class="hide-link close btn pull-right" ng-click="clientInfo.hide()" href=""><span class="icon"></span></a>
 
-<table>
+<h3> {{client.name}} </h3>
+<table class="row-seperators">
 <tr>
   <td> Address </td> 
   <td> {{client.address}} <br/> 
@@ -12,20 +16,19 @@
   <td> Coordinates </td> 
   <td> 
     Latitude: {{client.latitude}} <br/>
-    Longitude: {{client.longitude}} <br/>
+    Longitude: {{client.longitude}}
   </td>
- </tr>
+</tr>
 </table>
-<a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
-<a href="" ng-click="showHybridView()">Satellite View</a>
-
 <select ng-model="chartType">
-		<option value="pie">pie</option>
-		<option value="bar">bar</option>
-		<option value="line">line</option>
-		<option value="point">point</option>
-		<option value="area">area</option>
+	<option value="pie">pie</option>
+	<option value="bar">bar</option>
+	<option value="line">line</option>
+    <option value="point">point</option>
+    <option value="area">area</option>
 </select>
+
+<a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
 
 <div id="notifications">
 	<h4 style="display: block;">
@@ -48,5 +51,5 @@
 		</div>
 	</table>
 </div>
-
+</div>
 
