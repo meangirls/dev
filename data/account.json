@@ -1,0 +1,51 @@
+[
+  {
+    "id": "550771088c361e1ed12332c1",
+    "acctNbr": "79949426",
+    "acctType": "IRA",
+    "acctBalance": "298,123.56",
+    "asOfDate": "03/17/2015"
+  },
+  {
+    "id": "550771088c361e1ed12332c1",
+    "acctNbr": "53986937",
+    "acctType": "529",
+    "acctBalance": "512,388.94",
+    "asOfDate": "03/17/2015"
+  },
+  {
+    "id": "550771088c361e1ed12332c1",
+    "acctNbr": "69311574",
+    "acctType": "TOD",
+    "acctBalance": "272,640.34",
+    "asOfDate": "03/17/2015"
+  },
+  {
+    "id": "550771088c361e1ed12332c1",
+    "acctNbr": "53960729",
+    "acctType": "Individual",
+    "acctBalance": "308,326.34",
+    "asOfDate": "03/17/2015"
+  },
+  {
+    "id": "5507710867c9b6b3fe76b64b",
+    "acctNbr": "91427179",
+    "acctType": "529",
+    "acctBalance": "918,776.73",
+    "asOfDate": "03/17/2015"
+  },
+  {
+    "id": "5507710867c9b6b3fe76b64b",
+    "acctNbr": "55145783",
+    "acctType": "Individual",
+    "acctBalance": "208,467.11",
+    "asOfDate": "03/17/2015"
+  },
+  {
+    "id": "5507710867c9b6b3fe76b64b",
+    "acctNbr": "55145699",
+    "acctType": "IRA",
+    "acctBalance": "208,467.11",
+    "asOfDate": "03/17/2015"
+  }
+]

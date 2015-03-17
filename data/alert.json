@@ -1,0 +1,39 @@
+[  
+   {  
+      "id":"900928",
+      "type":"unmet_soi",
+      "date":"03/09/2015",
+      "message":"<a href=\"/advisor/accounts/client/portfolio.htm?accountId=4786553\"><strong>SUSANNE CHANDLER</strong></a> has an unmet statement of intention that will expire on 05/08/2015.<br /><a href=\"/advisor/accounts/client/portfolio.htm?accountId=4786553\">Access SOI information from the account&#8217;s Portfolio page.</a>",
+      "client":"SUSANNE CHANDLER",
+      "actionable":true,
+	  "acctNbr": "79949426"
+	  
+   },
+   {  
+      "id":"900931",
+      "type":"unmet_soi",
+      "date":"03/09/2015",
+      "message":"<a href=\"/advisor/accounts/client/portfolio.htm?accountId=4786553\"><strong>SUSANNE CHANDLER</strong></a> has an unmet statement of intention that will expire on 05/08/2015.<br /><a href=\"/advisor/accounts/client/portfolio.htm?accountId=4786553\">Access SOI information from the account&#8217;s Portfolio page.</a>",
+      "client":"SUSANNE CHANDLER",
+      "actionable":true,
+	  "acctNbr": "79949426"
+   },
+   {  
+      "id":"1114",
+      "type":"auto_purchase",
+      "date":"02/10/2015",
+      "fundId":37,
+      "message":"<a href=\"/advisor/accounts/client/portfolio.htm?accountId=55145783\"><strong>BLANCHARD PEREZ</strong></a>&#8217;s automatic purchase plan was established.",
+      "acctNbr":"55145783",
+      "client":"BLANCHARD PEREZ"
+   },
+   {  
+      "id":"1106",
+      "type":"auto_purchase",
+      "date":"02/09/2015",
+      "fundId":37,
+      "message":"<a href=\"/advisor/accounts/client/portfolio.htm?accountId=55145783\"><strong>>BLANCHARD PEREZ</strong></a>&#8217;s automatic purchase plan was established.",
+      "acctNbr":"55145783",
+      "client":"BLANCHARD PEREZ"
+   }
+]
