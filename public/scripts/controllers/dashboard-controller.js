@@ -83,7 +83,6 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'pageslide-directive
             //map.setZoom(18);
             //map.setCenter(this.getPosition());
             $scope.clientInfo.show();
-            
           });
         
 
