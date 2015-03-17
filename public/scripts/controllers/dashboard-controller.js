@@ -48,11 +48,13 @@ app.config(function($sceProvider) {
 	  
     $scope.map;
     $scope.clients = [];
+    
     $scope.$on('mapInitialized', function(event, evtMap) {
       map = evtMap;
       $scope.map = map;
       console.log('loading scripts/clients.json');
       $http.get('/dashboard/clients').success( function(clients) {
+    	
         for (var i=0; i<clients.length; i++) {
           var client = clients[i];
           client.position = new google.maps.LatLng(client.latitude,client.longitude);
