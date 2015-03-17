@@ -47,14 +47,28 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
           var client = clients[i];
           client.position = new google.maps.LatLng(client.latitude,client.longitude);
           client.title = client.name.first + " " + client.name.last + " " + client.address;
-          client.icon = {
-        	  path: google.maps.SymbolPath.CIRCLE,
-          		scale: 8,
-          		fillOpacity: 1,
-          		fillColor: 'red',
-          		strokeColor: '#ccc',
-          		strokeWeight: 1
+          
+          if (client.markerImage == "large") {
+        	  client.icon = {
+        			  scale: 12,
+        			  path: google.maps.SymbolPath.CIRCLE,
+        		fillOpacity: 1,
+        		fillColor: 'red',
+        		strokeColor: '#333',
+        		strokeWeight: 2
+        	  }
           }
+          else {
+        	  client.icon = {
+                	  path: google.maps.SymbolPath.CIRCLE,
+                  		scale: 8,
+                  		fillOpacity: 1,
+                  		fillColor: 'red',
+                		strokeColor: '#333',
+                  		strokeWeight: 2
+                  }
+          }
+         
 	  
           var marker = new google.maps.Marker(client);
 	  //marker.setIcon(client.markerImage);
@@ -65,7 +79,7 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
               $scope.panoId = panoId;
             });
             //map.setZoom(18);
-            map.setCenter(this.getPosition());
+            //map.setCenter(this.getPosition());
             $scope.clientInfo.show();
           });
           google.maps.event.addListener(map, 'click', function() {
@@ -110,8 +124,12 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
       this.element = e;
       this.attrs = a;
       this.show = function() {
-        this.element.css('display', 'block');
-        this.scope.$apply();
+ 
+
+    	    this.element.css('display', 'block');
+    	  this.scope.$apply();
+    	
+    	
       }
       this.hide = function() {
         this.element.css('display', 'none');

@@ -2225,7 +2225,3 @@ a#oo_launch_prompt:hover{background:#096;}
   margin-bottom: 5px;
   text-align: center;
 }
-.nav-justified > .dropdown .dropdown-menu {
-  top: auto;
-  left: auto;
-}
