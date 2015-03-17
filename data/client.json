@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "550771088c361e1ed12332c1",
+    "name": {
+      "first": "Patrick",
+      "last": "Wilson",
+      "middle": "B"
+    },
+    "address": "820 Livonia Avenue, Johnsonburg, Rhode Island, 1726",
+    "latitude": 35.4949,
+    "longitude": -117.7508,
+    "totalAssets": 564821168,
+    "taxId": 4230009894,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710867c9b6b3fe76b64b",
+    "name": {
+      "first": "Mccormick",
+      "last": "Townsend",
+      "middle": "B"
+    },
+    "address": "749 Everett Avenue, Leroy, South Carolina, 7844",
+    "latitude": 33.7222,
+    "longitude": -117.4114,
+    "totalAssets": 712114792,
+    "taxId": 4557877830,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710890516ffdd2f741cd",
+    "name": {
+      "first": "George",
+      "last": "Sellers",
+      "middle": "C"
+    },
+    "address": "387 Dorset Street, Lumberton, Guam, 4451",
+    "latitude": 33.5258,
+    "longitude": -116.2435,
+    "totalAssets": 560887881,
+    "taxId": 4787858134,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710844ceda4583040e13",
+    "name": {
+      "first": "Hurst",
+      "last": "Dunn",
+      "middle": "B"
+    },
+    "address": "834 Albemarle Terrace, Sperryville, West Virginia, 5196",
+    "latitude": 35.4143,
+    "longitude": -117.1811,
+    "totalAssets": 426239539,
+    "taxId": 4747623147,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108728ab460f7923654",
+    "name": {
+      "first": "Alma",
+      "last": "Hughes",
+      "middle": "B"
+    },
+    "address": "295 Martense Street, Hayes, California, 9690",
+    "latitude": 33.5647,
+    "longitude": -115.4324,
+    "totalAssets": 498211048,
+    "taxId": 9120424166,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771080264581c64cece90",
+    "name": {
+      "first": "Jannie",
+      "last": "Hill",
+      "middle": "B"
+    },
+    "address": "975 Tillary Street, Ebro, Massachusetts, 1657",
+    "latitude": 33.1168,
+    "longitude": -115.5524,
+    "totalAssets": 881255439,
+    "taxId": 8196044529,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108dbc8e2bb9bee0c62",
+    "name": {
+      "first": "Pat",
+      "last": "Dale",
+      "middle": "A"
+    },
+    "address": "371 Hart Place, Statenville, Louisiana, 8697",
+    "latitude": 34.2987,
+    "longitude": -115.2563,
+    "totalAssets": 488694413,
+    "taxId": 5786170922,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771089d0f81f22bf2dbf3",
+    "name": {
+      "first": "Velez",
+      "last": "Nolan",
+      "middle": "B"
+    },
+    "address": "151 Clarendon Road, Harrison, South Dakota, 9930",
+    "latitude": 35.1198,
+    "longitude": -116.937,
+    "totalAssets": 873671779,
+    "taxId": 9396351716,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771085ef7bd63a77d920c",
+    "name": {
+      "first": "Phelps",
+      "last": "Donaldson",
+      "middle": "A"
+    },
+    "address": "979 Plymouth Street, Trexlertown, Indiana, 5243",
+    "latitude": 34.9009,
+    "longitude": -117.2792,
+    "totalAssets": 717744426,
+    "taxId": 8392315092,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710829544128fa3d3403",
+    "name": {
+      "first": "Robinson",
+      "last": "Vaughn",
+      "middle": "C"
+    },
+    "address": "752 Nassau Avenue, Tioga, Washington, 8232",
+    "latitude": 35.7381,
+    "longitude": -116.6831,
+    "totalAssets": 434595605,
+    "taxId": 1279221423,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771082ca084a30d83544b",
+    "name": {
+      "first": "Joyce",
+      "last": "Kramer",
+      "middle": "A"
+    },
+    "address": "558 Canton Court, Conestoga, Texas, 5294",
+    "latitude": 35.6553,
+    "longitude": -117.6303,
+    "totalAssets": 715375459,
+    "taxId": 9439822532,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108a3a7db478fcd24a1",
+    "name": {
+      "first": "Sylvia",
+      "last": "Mcneil",
+      "middle": "A"
+    },
+    "address": "598 Lott Avenue, Hiseville, Arizona, 2041",
+    "latitude": 34.4501,
+    "longitude": -117.9054,
+    "totalAssets": 358863261,
+    "taxId": 3016902375,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108d8af8e4d4b7c21b2",
+    "name": {
+      "first": "Mckinney",
+      "last": "Wooten",
+      "middle": "B"
+    },
+    "address": "951 Harbor Court, Shasta, Marshall Islands, 2413",
+    "latitude": 35.0533,
+    "longitude": -115.6273,
+    "totalAssets": 77638867,
+    "taxId": 3740856343,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771085ef75d1012b0d208",
+    "name": {
+      "first": "Jordan",
+      "last": "Dillon",
+      "middle": "B"
+    },
+    "address": "845 Wogan Terrace, Jackpot, New Mexico, 3684",
+    "latitude": 35.2578,
+    "longitude": -117.83,
+    "totalAssets": 698946360,
+    "taxId": 1206785421,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108566029092f0fa05b",
+    "name": {
+      "first": "Blackwell",
+      "last": "Snyder",
+      "middle": "A"
+    },
+    "address": "534 Polar Street, Rosedale, Oklahoma, 5914",
+    "latitude": 33.093,
+    "longitude": -116.9924,
+    "totalAssets": 550071974,
+    "taxId": 8196561156,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108fb00c3049e25c733",
+    "name": {
+      "first": "Alisa",
+      "last": "Pratt",
+      "middle": "B"
+    },
+    "address": "971 Hale Avenue, Brule, Maryland, 212",
+    "latitude": 33.681,
+    "longitude": -115.6876,
+    "totalAssets": 161074381,
+    "taxId": 4031131344,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108ace6c9b5c26729fd",
+    "name": {
+      "first": "Amparo",
+      "last": "Conrad",
+      "middle": "B"
+    },
+    "address": "561 Louisa Street, Wolcott, Puerto Rico, 3086",
+    "latitude": 34.8398,
+    "longitude": -115.594,
+    "totalAssets": 948056303,
+    "taxId": 7960686538,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710800d686fc321340c7",
+    "name": {
+      "first": "Vicky",
+      "last": "Terrell",
+      "middle": "C"
+    },
+    "address": "525 Ovington Court, Nadine, Connecticut, 4469",
+    "latitude": 33.9844,
+    "longitude": -117.7309,
+    "totalAssets": 857291542,
+    "taxId": 6611355040,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108036794c52d915550",
+    "name": {
+      "first": "Nolan",
+      "last": "Workman",
+      "middle": "C"
+    },
+    "address": "103 Rock Street, Holcombe, Oregon, 4660",
+    "latitude": 33.356,
+    "longitude": -117.3242,
+    "totalAssets": 424831167,
+    "taxId": 7555695501,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108670fe2c4733f3f98",
+    "name": {
+      "first": "Carolyn",
+      "last": "Goodman",
+      "middle": "B"
+    },
+    "address": "500 Butler Place, Edneyville, Michigan, 7544",
+    "latitude": 34.6766,
+    "longitude": -116.6907,
+    "totalAssets": 38982067,
+    "taxId": 4993846540,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108dafa6415f14ee9e7",
+    "name": {
+      "first": "Brock",
+      "last": "Holcomb",
+      "middle": "B"
+    },
+    "address": "646 Bayview Avenue, Sanborn, Wisconsin, 7263",
+    "latitude": 33.7978,
+    "longitude": -115.4633,
+    "totalAssets": 492710398,
+    "taxId": 1866254065,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771088a871adb07fae74c",
+    "name": {
+      "first": "Eve",
+      "last": "Mccarthy",
+      "middle": "B"
+    },
+    "address": "327 Autumn Avenue, Veyo, Colorado, 6089",
+    "latitude": 34.4171,
+    "longitude": -116.0602,
+    "totalAssets": 23939662,
+    "taxId": 4561760882,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "550771086c542f2e47d0e89c",
+    "name": {
+      "first": "Dalton",
+      "last": "Lowe",
+      "middle": "B"
+    },
+    "address": "668 Agate Court, Alderpoint, Federated States Of Micronesia, 4570",
+    "latitude": 33.9717,
+    "longitude": -116.8278,
+    "totalAssets": 841785975,
+    "taxId": 5190163461,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "5507710816106a19f2f2d9ef",
+    "name": {
+      "first": "Waller",
+      "last": "Ferrell",
+      "middle": "B"
+    },
+    "address": "914 Central Avenue, Murillo, New Jersey, 8591",
+    "latitude": 33.2998,
+    "longitude": -115.1424,
+    "totalAssets": 333580530,
+    "taxId": 2280098297,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "550771080f4ab5bbb3fd0e85",
+    "name": {
+      "first": "Lois",
+      "last": "Boyer",
+      "middle": "A"
+    },
+    "address": "764 Cranberry Street, Brewster, American Samoa, 625",
+    "latitude": 34.2647,
+    "longitude": -116.6576,
+    "totalAssets": 829289837,
+    "taxId": 8908794431,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771081ac15dc1beb9c6fa",
+    "name": {
+      "first": "Lopez",
+      "last": "Calhoun",
+      "middle": "A"
+    },
+    "address": "299 Monitor Street, Disautel, District Of Columbia, 4111",
+    "latitude": 33.4278,
+    "longitude": -115.0021,
+    "totalAssets": 656604667,
+    "taxId": 5767246702,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108725491dff6ea2e59",
+    "name": {
+      "first": "Priscilla",
+      "last": "Stafford",
+      "middle": "B"
+    },
+    "address": "166 Interborough Parkway, Alamo, New York, 8135",
+    "latitude": 34.6885,
+    "longitude": -115.2233,
+    "totalAssets": 283848302,
+    "taxId": 6583230278,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108c87c20f3141a0d0a",
+    "name": {
+      "first": "Jolene",
+      "last": "Crawford",
+      "middle": "B"
+    },
+    "address": "737 Brightwater Court, Ballico, Arkansas, 6356",
+    "latitude": 33.707,
+    "longitude": -116.9041,
+    "totalAssets": 243845565,
+    "taxId": 8063548614,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108c2385e8c96d50e27",
+    "name": {
+      "first": "Frederick",
+      "last": "Whitney",
+      "middle": "B"
+    },
+    "address": "285 Nostrand Avenue, Delwood, Georgia, 6502",
+    "latitude": 35.2914,
+    "longitude": -117.6656,
+    "totalAssets": 445658918,
+    "taxId": 2994911865,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771081047087b7a70d673",
+    "name": {
+      "first": "Jacqueline",
+      "last": "Garza",
+      "middle": "B"
+    },
+    "address": "804 Juliana Place, Salix, Northern Mariana Islands, 6406",
+    "latitude": 33.2415,
+    "longitude": -115.1296,
+    "totalAssets": 187773449,
+    "taxId": 2432615690,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710895271608b3368b13",
+    "name": {
+      "first": "Duran",
+      "last": "Fitzpatrick",
+      "middle": "B"
+    },
+    "address": "317 Bouck Court, Como, New Hampshire, 5766",
+    "latitude": 35.7773,
+    "longitude": -116.3308,
+    "totalAssets": 347846880,
+    "taxId": 3290546554,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108a02525b1f1a647ef",
+    "name": {
+      "first": "Humphrey",
+      "last": "Buckley",
+      "middle": "A"
+    },
+    "address": "546 Boerum Place, Breinigsville, Alabama, 4432",
+    "latitude": 33.278,
+    "longitude": -117.5848,
+    "totalAssets": 413209548,
+    "taxId": 1575320985,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108e76576bf230b2c54",
+    "name": {
+      "first": "Agnes",
+      "last": "Cooley",
+      "middle": "A"
+    },
+    "address": "486 Winthrop Street, Boling, Nebraska, 9461",
+    "latitude": 33.8865,
+    "longitude": -115.6853,
+    "totalAssets": 517824321,
+    "taxId": 5740663040,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108d98cc998c256607d",
+    "name": {
+      "first": "Georgette",
+      "last": "Stanley",
+      "middle": "B"
+    },
+    "address": "502 Kings Place, Newkirk, North Carolina, 9003",
+    "latitude": 34.8839,
+    "longitude": -115.792,
+    "totalAssets": 582003105,
+    "taxId": 8008306057,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108c211c7152f3ac22f",
+    "name": {
+      "first": "Karin",
+      "last": "Walton",
+      "middle": "B"
+    },
+    "address": "773 Fiske Place, Grazierville, Utah, 7860",
+    "latitude": 35.2013,
+    "longitude": -115.0997,
+    "totalAssets": 646514802,
+    "taxId": 3777963183,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108aa702640d8120ca8",
+    "name": {
+      "first": "Barnes",
+      "last": "Mcbride",
+      "middle": "A"
+    },
+    "address": "396 Hendrickson Street, Echo, Nevada, 3085",
+    "latitude": 35.1122,
+    "longitude": -115.5043,
+    "totalAssets": 441085431,
+    "taxId": 8063462343,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710817f00cd79770f6ce",
+    "name": {
+      "first": "Vincent",
+      "last": "Huffman",
+      "middle": "A"
+    },
+    "address": "469 Narrows Avenue, Collins, Illinois, 848",
+    "latitude": 33.2507,
+    "longitude": -117.9996,
+    "totalAssets": 182151599,
+    "taxId": 9129719512,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "550771083eb34d99aa3c1162",
+    "name": {
+      "first": "Trina",
+      "last": "Dean",
+      "middle": "C"
+    },
+    "address": "852 Bedford Place, Healy, Delaware, 1180",
+    "latitude": 35.2625,
+    "longitude": -115.5205,
+    "totalAssets": 461589989,
+    "taxId": 3685515744,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710814735d736a335470",
+    "name": {
+      "first": "Leah",
+      "last": "Cunningham",
+      "middle": "C"
+    },
+    "address": "143 Chauncey Street, Elfrida, Idaho, 959",
+    "latitude": 33.3813,
+    "longitude": -115.2078,
+    "totalAssets": 59275412,
+    "taxId": 7265253135,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710897208f81ff359bd9",
+    "name": {
+      "first": "Blanchard",
+      "last": "Schmidt",
+      "middle": "B"
+    },
+    "address": "594 Berry Street, Austinburg, Missouri, 7788",
+    "latitude": 35.2469,
+    "longitude": -116.5918,
+    "totalAssets": 320350582,
+    "taxId": 5166415327,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710856cb5c55f6b837f3",
+    "name": {
+      "first": "Lila",
+      "last": "Stevens",
+      "middle": "A"
+    },
+    "address": "210 Glendale Court, Madrid, Florida, 7591",
+    "latitude": 33.8314,
+    "longitude": -117.2519,
+    "totalAssets": 787884543,
+    "taxId": 1475545126,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710838a22a7ca2b77ba1",
+    "name": {
+      "first": "Moody",
+      "last": "Chambers",
+      "middle": "B"
+    },
+    "address": "249 Ridgewood Avenue, Eden, Mississippi, 8863",
+    "latitude": 33.1672,
+    "longitude": -116.9528,
+    "totalAssets": 374380557,
+    "taxId": 8481343268,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "5507710806aa50d4c6a288a9",
+    "name": {
+      "first": "Woodard",
+      "last": "Pollard",
+      "middle": "C"
+    },
+    "address": "729 Grafton Street, Brecon, Minnesota, 7796",
+    "latitude": 35.8958,
+    "longitude": -117.036,
+    "totalAssets": 41729060,
+    "taxId": 6118907491,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108ea344e229a173015",
+    "name": {
+      "first": "Mcdaniel",
+      "last": "Vincent",
+      "middle": "B"
+    },
+    "address": "225 Bayard Street, Silkworth, Kentucky, 8068",
+    "latitude": 35.8408,
+    "longitude": -115.2931,
+    "totalAssets": 876095111,
+    "taxId": 1275354414,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710873254a2d3bdab105",
+    "name": {
+      "first": "Rosanna",
+      "last": "Robles",
+      "middle": "C"
+    },
+    "address": "202 Middleton Street, Ola, Palau, 206",
+    "latitude": 35.5074,
+    "longitude": -116.0248,
+    "totalAssets": 245871606,
+    "taxId": 5601311232,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108b44c2bff7b3523f8",
+    "name": {
+      "first": "Leta",
+      "last": "Lane",
+      "middle": "C"
+    },
+    "address": "672 Devoe Street, Orason, North Dakota, 867",
+    "latitude": 35.2985,
+    "longitude": -115.1241,
+    "totalAssets": 686891410,
+    "taxId": 1115422114,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771087cb96b2c0362a8ef",
+    "name": {
+      "first": "Lorna",
+      "last": "Bowman",
+      "middle": "C"
+    },
+    "address": "540 Schenck Street, Harborton, Montana, 4102",
+    "latitude": 35.3725,
+    "longitude": -116.0175,
+    "totalAssets": 109461058,
+    "taxId": 7773925415,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "550771089916de0aaf3f3abb",
+    "name": {
+      "first": "Decker",
+      "last": "Rosales",
+      "middle": "B"
+    },
+    "address": "211 Herbert Street, Interlochen, Virgin Islands, 215",
+    "latitude": 34.2858,
+    "longitude": -116.3545,
+    "totalAssets": 803469049,
+    "taxId": 8629761652,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108663fcd5ee16c6d2f",
+    "name": {
+      "first": "Pearson",
+      "last": "Rodgers",
+      "middle": "A"
+    },
+    "address": "781 Rutledge Street, Maybell, Kansas, 1558",
+    "latitude": 35.8658,
+    "longitude": -117.411,
+    "totalAssets": 914000594,
+    "taxId": 7319576092,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771081583f56b41852c43",
+    "name": {
+      "first": "Beverly",
+      "last": "Goodwin",
+      "middle": "B"
+    },
+    "address": "502 Bedford Avenue, Idledale, Iowa, 7822",
+    "latitude": 33.3943,
+    "longitude": -115.9272,
+    "totalAssets": 154658657,
+    "taxId": 1428193797,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710895f4c52f0ff83686",
+    "name": {
+      "first": "Letitia",
+      "last": "Pace",
+      "middle": "C"
+    },
+    "address": "824 Cook Street, Cannondale, Virginia, 7112",
+    "latitude": 34.8377,
+    "longitude": -116.3611,
+    "totalAssets": 981302625,
+    "taxId": 2799323360,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108306ec31ff164b912",
+    "name": {
+      "first": "Madeleine",
+      "last": "Pierce",
+      "middle": "B"
+    },
+    "address": "791 Moffat Street, Trucksville, Ohio, 7829",
+    "latitude": 35.1594,
+    "longitude": -115.8435,
+    "totalAssets": 210498462,
+    "taxId": 7214963893,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771081362876dc7fed630",
+    "name": {
+      "first": "Patterson",
+      "last": "Craig",
+      "middle": "B"
+    },
+    "address": "577 Hampton Place, Wheaton, Alaska, 8666",
+    "latitude": 33.5947,
+    "longitude": -115.6984,
+    "totalAssets": 792016093,
+    "taxId": 8493853343,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771087a1293c3b38c534c",
+    "name": {
+      "first": "Merle",
+      "last": "Finch",
+      "middle": "B"
+    },
+    "address": "881 Rose Street, Cowiche, Wyoming, 4671",
+    "latitude": 34.9326,
+    "longitude": -115.3239,
+    "totalAssets": 858374987,
+    "taxId": 1979942599,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108b0e59fceb7a02a0b",
+    "name": {
+      "first": "Reilly",
+      "last": "Ayala",
+      "middle": "C"
+    },
+    "address": "636 Elm Place, Blandburg, Vermont, 6159",
+    "latitude": 34.0177,
+    "longitude": -116.4335,
+    "totalAssets": 655864760,
+    "taxId": 2087225868,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108d0932854e300d7dc",
+    "name": {
+      "first": "Austin",
+      "last": "Good",
+      "middle": "C"
+    },
+    "address": "162 Cooper Street, Seymour, Hawaii, 6179",
+    "latitude": 34.6637,
+    "longitude": -117.8994,
+    "totalAssets": 410391081,
+    "taxId": 7405958490,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108f6fbe2453fe9f722",
+    "name": {
+      "first": "Estella",
+      "last": "Duffy",
+      "middle": "A"
+    },
+    "address": "788 Gallatin Place, Toftrees, Tennessee, 7176",
+    "latitude": 33.7948,
+    "longitude": -117.9485,
+    "totalAssets": 437958783,
+    "taxId": 6191779201,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771080e6e73d0c901331a",
+    "name": {
+      "first": "Shelia",
+      "last": "Trevino",
+      "middle": "B"
+    },
+    "address": "750 Driggs Avenue, Kansas, Maine, 7741",
+    "latitude": 35.9679,
+    "longitude": -117.474,
+    "totalAssets": 700385126,
+    "taxId": 9804575188,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "5507710836ea138b80098c17",
+    "name": {
+      "first": "Morse",
+      "last": "Nicholson",
+      "middle": "C"
+    },
+    "address": "645 Robert Street, Keller, Rhode Island, 7137",
+    "latitude": 35.5249,
+    "longitude": -115.3516,
+    "totalAssets": 323067061,
+    "taxId": 4790903814,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710863e55c3d65fdb5ed",
+    "name": {
+      "first": "Mcmillan",
+      "last": "Medina",
+      "middle": "A"
+    },
+    "address": "383 Seabring Street, Noxen, South Carolina, 9806",
+    "latitude": 34.7558,
+    "longitude": -117.8407,
+    "totalAssets": 36463020,
+    "taxId": 2578559505,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "550771080d03a0913ee5fdad",
+    "name": {
+      "first": "Whitfield",
+      "last": "Vargas",
+      "middle": "C"
+    },
+    "address": "242 Plaza Street, Barstow, Guam, 2817",
+    "latitude": 35.7872,
+    "longitude": -116.3413,
+    "totalAssets": 269093223,
+    "taxId": 8787777899,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "5507710882772784728fd286",
+    "name": {
+      "first": "Ada",
+      "last": "West",
+      "middle": "A"
+    },
+    "address": "729 Cornelia Street, Jardine, West Virginia, 7610",
+    "latitude": 34.4997,
+    "longitude": -117.4381,
+    "totalAssets": 59823907,
+    "taxId": 1792841801,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108291ef895c1561c5d",
+    "name": {
+      "first": "Ford",
+      "last": "Walls",
+      "middle": "B"
+    },
+    "address": "503 Gaylord Drive, Emory, California, 6128",
+    "latitude": 33.9721,
+    "longitude": -116.8148,
+    "totalAssets": 167861350,
+    "taxId": 3784689969,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710858648a3686a342ea",
+    "name": {
+      "first": "Billie",
+      "last": "Daniel",
+      "middle": "B"
+    },
+    "address": "174 Verona Place, Jugtown, Massachusetts, 231",
+    "latitude": 34.6624,
+    "longitude": -116.0214,
+    "totalAssets": 255543668,
+    "taxId": 3229178705,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "550771080fe14cfbdcf2189d",
+    "name": {
+      "first": "Knapp",
+      "last": "Arnold",
+      "middle": "A"
+    },
+    "address": "572 Hall Street, Corinne, Louisiana, 5958",
+    "latitude": 35.0783,
+    "longitude": -116.5033,
+    "totalAssets": 198814917,
+    "taxId": 9023568717,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "550771080f1bb5fc41e64203",
+    "name": {
+      "first": "Taylor",
+      "last": "Meyers",
+      "middle": "A"
+    },
+    "address": "279 Aster Court, Accoville, South Dakota, 6438",
+    "latitude": 33.5762,
+    "longitude": -115.1118,
+    "totalAssets": 941414048,
+    "taxId": 3759945726,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "5507710861270959d95c4c92",
+    "name": {
+      "first": "Myrna",
+      "last": "Estrada",
+      "middle": "A"
+    },
+    "address": "217 Heath Place, Camas, Indiana, 9300",
+    "latitude": 33.5128,
+    "longitude": -115.9771,
+    "totalAssets": 87591455,
+    "taxId": 5503892132,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "5507710816c0dc25e744922e",
+    "name": {
+      "first": "Irma",
+      "last": "Patel",
+      "middle": "A"
+    },
+    "address": "584 Java Street, Beason, Washington, 7705",
+    "latitude": 35.9239,
+    "longitude": -117.8309,
+    "totalAssets": 197946497,
+    "taxId": 2802586677,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108ceda3d791499c2d0",
+    "name": {
+      "first": "Wilson",
+      "last": "Merritt",
+      "middle": "C"
+    },
+    "address": "127 Dahlgreen Place, Cressey, Texas, 5065",
+    "latitude": 33.3724,
+    "longitude": -115.4885,
+    "totalAssets": 900161257,
+    "taxId": 1509076857,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108c24cf92811702843",
+    "name": {
+      "first": "Riddle",
+      "last": "Colon",
+      "middle": "A"
+    },
+    "address": "444 Revere Place, Turpin, Arizona, 164",
+    "latitude": 35.8662,
+    "longitude": -117.4945,
+    "totalAssets": 488721728,
+    "taxId": 7015847971,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771082543ce02b5845761",
+    "name": {
+      "first": "Lina",
+      "last": "Weeks",
+      "middle": "A"
+    },
+    "address": "584 Lynch Street, Rosine, Marshall Islands, 9001",
+    "latitude": 33.4314,
+    "longitude": -117.2419,
+    "totalAssets": 892690658,
+    "taxId": 3609838204,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771089a68662c74284c19",
+    "name": {
+      "first": "Bette",
+      "last": "Goff",
+      "middle": "C"
+    },
+    "address": "264 Scholes Street, Camino, New Mexico, 3388",
+    "latitude": 33.651,
+    "longitude": -116.3672,
+    "totalAssets": 884909255,
+    "taxId": 4420243000,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108b5a0107178cf554c",
+    "name": {
+      "first": "Burnett",
+      "last": "Miles",
+      "middle": "B"
+    },
+    "address": "326 Moore Street, Oley, Oklahoma, 9871",
+    "latitude": 34.5951,
+    "longitude": -116.8767,
+    "totalAssets": 32118553,
+    "taxId": 2202593646,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108c59101217653baa1",
+    "name": {
+      "first": "Bonner",
+      "last": "Bowen",
+      "middle": "B"
+    },
+    "address": "903 Miami Court, Bellamy, Maryland, 4101",
+    "latitude": 34.0369,
+    "longitude": -115.878,
+    "totalAssets": 548448753,
+    "taxId": 3579275007,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108e8aa74bb10d2f8f6",
+    "name": {
+      "first": "Twila",
+      "last": "Mcknight",
+      "middle": "C"
+    },
+    "address": "932 Dupont Street, Knowlton, Puerto Rico, 8712",
+    "latitude": 33.4939,
+    "longitude": -116.2825,
+    "totalAssets": 46151637,
+    "taxId": 7554758602,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710899aee616ffbd8e43",
+    "name": {
+      "first": "Jarvis",
+      "last": "Saunders",
+      "middle": "C"
+    },
+    "address": "672 Blake Court, Islandia, Connecticut, 3983",
+    "latitude": 34.8923,
+    "longitude": -115.4255,
+    "totalAssets": 425383062,
+    "taxId": 1150869933,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108de7f48b29874eb96",
+    "name": {
+      "first": "Gentry",
+      "last": "Warner",
+      "middle": "C"
+    },
+    "address": "175 Metropolitan Avenue, Alden, Oregon, 525",
+    "latitude": 33.9921,
+    "longitude": -115.8795,
+    "totalAssets": 630233749,
+    "taxId": 6962789342,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108f016ad118bf3baf6",
+    "name": {
+      "first": "Catalina",
+      "last": "Ford",
+      "middle": "B"
+    },
+    "address": "903 Harden Street, Kidder, Michigan, 1116",
+    "latitude": 35.5545,
+    "longitude": -115.6217,
+    "totalAssets": 665380292,
+    "taxId": 1507328129,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "550771087ac1c7c292e8fd67",
+    "name": {
+      "first": "Sharon",
+      "last": "Day",
+      "middle": "A"
+    },
+    "address": "571 Strickland Avenue, Rodman, Wisconsin, 9034",
+    "latitude": 34.2344,
+    "longitude": -117.9965,
+    "totalAssets": 174117909,
+    "taxId": 5107437622,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108f46caa20dc9e6cec",
+    "name": {
+      "first": "Payne",
+      "last": "Nunez",
+      "middle": "B"
+    },
+    "address": "742 Luquer Street, Kieler, Colorado, 7847",
+    "latitude": 35.5173,
+    "longitude": -115.4661,
+    "totalAssets": 591078004,
+    "taxId": 9330761654,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771082f4a71f0296bbf6d",
+    "name": {
+      "first": "Alexandria",
+      "last": "Collins",
+      "middle": "A"
+    },
+    "address": "701 Monroe Place, Longbranch, Federated States Of Micronesia, 4900",
+    "latitude": 33.1567,
+    "longitude": -116.8568,
+    "totalAssets": 585934161,
+    "taxId": 8324564796,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108cded552c6ac5c34c",
+    "name": {
+      "first": "Mclaughlin",
+      "last": "Murray",
+      "middle": "B"
+    },
+    "address": "854 Joralemon Street, Darrtown, New Jersey, 3320",
+    "latitude": 35.9246,
+    "longitude": -116.0532,
+    "totalAssets": 225133747,
+    "taxId": 6941138269,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771088e8279e9e54cd0a7",
+    "name": {
+      "first": "Daniel",
+      "last": "Chang",
+      "middle": "B"
+    },
+    "address": "119 Vista Place, Coyote, American Samoa, 4406",
+    "latitude": 33.6349,
+    "longitude": -116.2967,
+    "totalAssets": 703761154,
+    "taxId": 9172502222,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "55077108b0ddd9cc0796ece9",
+    "name": {
+      "first": "Cervantes",
+      "last": "Morris",
+      "middle": "A"
+    },
+    "address": "889 Bergen Street, Tetherow, District Of Columbia, 1666",
+    "latitude": 35.7158,
+    "longitude": -116.9757,
+    "totalAssets": 371686765,
+    "taxId": 7851483917,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "5507710859af74922c4b22fa",
+    "name": {
+      "first": "Frank",
+      "last": "Brooks",
+      "middle": "B"
+    },
+    "address": "482 Cheever Place, Rew, New York, 6845",
+    "latitude": 35.1287,
+    "longitude": -116.5335,
+    "totalAssets": 669570806,
+    "taxId": 9513262566,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "550771081a3c77fed901f8df",
+    "name": {
+      "first": "Liz",
+      "last": "Hobbs",
+      "middle": "A"
+    },
+    "address": "169 Eaton Court, Fostoria, Arkansas, 4001",
+    "latitude": 35.1016,
+    "longitude": -117.9842,
+    "totalAssets": 344930332,
+    "taxId": 4245494993,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771082859e72dc82ae9db",
+    "name": {
+      "first": "Imelda",
+      "last": "Powers",
+      "middle": "C"
+    },
+    "address": "349 Senator Street, Goldfield, Georgia, 1543",
+    "latitude": 33.0181,
+    "longitude": -116.3649,
+    "totalAssets": 327242201,
+    "taxId": 7304208253,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108dd9f2fc883f43d15",
+    "name": {
+      "first": "Kasey",
+      "last": "Hansen",
+      "middle": "B"
+    },
+    "address": "817 Vernon Avenue, Hollins, Northern Mariana Islands, 4887",
+    "latitude": 35.7005,
+    "longitude": -116.2391,
+    "totalAssets": 647371650,
+    "taxId": 9344468472,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710810c2f629831d64fd",
+    "name": {
+      "first": "Navarro",
+      "last": "Spence",
+      "middle": "B"
+    },
+    "address": "622 Dover Street, Roberts, New Hampshire, 3502",
+    "latitude": 35.7941,
+    "longitude": -117.1971,
+    "totalAssets": 74044869,
+    "taxId": 2456460779,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108d4a16be2c08ab231",
+    "name": {
+      "first": "Erica",
+      "last": "Bradford",
+      "middle": "C"
+    },
+    "address": "104 Ridge Boulevard, Walker, Alabama, 8613",
+    "latitude": 34.8088,
+    "longitude": -117.0925,
+    "totalAssets": 264111642,
+    "taxId": 8683328189,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108f310502fbc3a68c2",
+    "name": {
+      "first": "Tyler",
+      "last": "Curtis",
+      "middle": "A"
+    },
+    "address": "481 Kenmore Court, Stockdale, Nebraska, 7269",
+    "latitude": 35.1485,
+    "longitude": -117.6436,
+    "totalAssets": 969533309,
+    "taxId": 3477834171,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "55077108790e031033747e75",
+    "name": {
+      "first": "Eaton",
+      "last": "Solis",
+      "middle": "B"
+    },
+    "address": "812 Tehama Street, Sunriver, North Carolina, 9755",
+    "latitude": 35.2635,
+    "longitude": -117.4837,
+    "totalAssets": 118237970,
+    "taxId": 7525259378,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108a0f28cba8bd21c18",
+    "name": {
+      "first": "Gill",
+      "last": "Marsh",
+      "middle": "C"
+    },
+    "address": "947 Wortman Avenue, Hasty, Utah, 8669",
+    "latitude": 34.9682,
+    "longitude": -116.6914,
+    "totalAssets": 109009224,
+    "taxId": 4469106493,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108e88b7e5c1386f10b",
+    "name": {
+      "first": "Gwendolyn",
+      "last": "Snider",
+      "middle": "C"
+    },
+    "address": "105 Falmouth Street, Fillmore, Nevada, 9702",
+    "latitude": 34.5147,
+    "longitude": -116.7637,
+    "totalAssets": 747961049,
+    "taxId": 3022822253,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  },
+  {
+    "id": "550771086ead62e4f20569be",
+    "name": {
+      "first": "Randi",
+      "last": "Mcgowan",
+      "middle": "A"
+    },
+    "address": "294 Dekoven Court, Ferney, Illinois, 5347",
+    "latitude": 35.2199,
+    "longitude": -116.8218,
+    "totalAssets": 989502205,
+    "taxId": 5937211857,
+    "alert": false,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710891d5892562bdca14",
+    "name": {
+      "first": "Leona",
+      "last": "Mercado",
+      "middle": "B"
+    },
+    "address": "192 Brighton Court, Hoagland, Delaware, 7110",
+    "latitude": 35.3759,
+    "longitude": -115.3797,
+    "totalAssets": 367631555,
+    "taxId": 1114883907,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "small"
+  },
+  {
+    "id": "5507710891fb92f9e01eaccb",
+    "name": {
+      "first": "Sandy",
+      "last": "Curry",
+      "middle": "A"
+    },
+    "address": "421 Carlton Avenue, Dexter, Idaho, 7459",
+    "latitude": 34.8646,
+    "longitude": -116.5171,
+    "totalAssets": 895789535,
+    "taxId": 4018231156,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "medium"
+  },
+  {
+    "id": "55077108dbb81b1c939831af",
+    "name": {
+      "first": "Angeline",
+      "last": "Huber",
+      "middle": "A"
+    },
+    "address": "397 Taaffe Place, Marion, Missouri, 478",
+    "latitude": 35.5464,
+    "longitude": -115.1398,
+    "totalAssets": 858545002,
+    "taxId": 2423510164,
+    "alert": true,
+    "financialTransaction": true,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710805df27eb9ff9a7c9",
+    "name": {
+      "first": "Corrine",
+      "last": "Hyde",
+      "middle": "B"
+    },
+    "address": "827 Quentin Road, Sena, Florida, 8784",
+    "latitude": 34.3664,
+    "longitude": -115.1505,
+    "totalAssets": 436024103,
+    "taxId": 6426225741,
+    "alert": false,
+    "financialTransaction": false,
+    "markerImage": "large"
+  },
+  {
+    "id": "5507710802b32abb2c732427",
+    "name": {
+      "first": "Lynnette",
+      "last": "Duke",
+      "middle": "A"
+    },
+    "address": "570 Heyward Street, Ruffin, Mississippi, 2202",
+    "latitude": 33.3574,
+    "longitude": -115.497,
+    "totalAssets": 866355540,
+    "taxId": 2639076964,
+    "alert": true,
+    "financialTransaction": false,
+    "markerImage": "small"
+  }
+]
