@@ -30,9 +30,8 @@
 
 <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
 
-<div id="notifications">
-	<h4 style="display: block;">
-	Alerts	
+<div id="notifications" class="section-margin">
+	<h3 class="hr hr-thick">Notifications</h3>
 	<div ng-repeat="alert in alerts">
 		<ul>
 			<li ng-bind-html="alert.message"></li>
@@ -42,13 +41,25 @@
 	</h4>
 </div>
 
-<div id="transactions">
-	<h4 style="display: block;">
-	Transactions
+<div id="transactions" class="section-margin">
+	<h3 class="hr hr-thick">Transactions</h3>
 	<table class="row-separators">
-		<div ng-repeat="transaction in transactions">
-		{{transaction.date}} {{transaction.fundName}} {{transaction.date}} {{transaction.category}} {{transaction.amount}}
-		</div>
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Fund</th>
+				<th>Category</th>
+				<th>Amount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="transaction in transactions">
+				<td>{{transaction.date}}</td>
+				<td>{{transaction.fundName}}</td>
+				<td>{{transaction.category}}</td>
+				<td>{{transaction.amount}}</td>
+			</tr>
+		</tbody>
 	</table>
 </div>
 </div>
