@@ -1,5 +1,6 @@
 <a class="hide-link" ng-click="clientInfo.hide()" href="">x</a>
 <h3> {{client.name}} </h3>
+
 <table>
 <tr>
   <td> Address </td> 
@@ -11,9 +12,9 @@
   <td> Coordinates </td> 
   <td> 
     Latitude: {{client.latitude}} <br/>
-    Longitude: {{client.longitude}}
+    Longitude: {{client.longitude}} <br/>
   </td>
-</tr>
+ </tr>
 </table>
 <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
 <a href="" ng-click="showHybridView()">Satellite View</a>
@@ -25,3 +26,27 @@
 		<option value="point">point</option>
 		<option value="area">area</option>
 </select>
+
+<div id="notifications">
+	<h4 style="display: block;">
+	Alerts	
+	<div ng-repeat="alert in alerts">
+		<ul>
+			<li ng-bind-html="alert.message"></li>
+			<p>{{alert.date}}</p>
+		</ul>
+	</div>
+	</h4>
+</div>
+
+<div id="transactions">
+	<h4 style="display: block;">
+	Transactions
+	<table>
+		<div ng-repeat="transaction in transactions">
+		{{transaction.date}} {{transaction.fundName}} {{transaction.date}} {{transaction.category}} {{transaction.amount}}
+		</div>
+	</table>
+</div>
+
+

@@ -28,6 +28,11 @@ var mcOptions = {
 };
 
 var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
+app.config(function($sceProvider) {
+  // Completely disable SCE.  For demonstration purposes only!!
+  // Do not use in new projects.
+  $sceProvider.enabled(false);
+});
 
   app.controller('mapController', function($scope, $http, StreetView) {
 	  
@@ -42,7 +47,7 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
       map = evtMap;
       $scope.map = map;
       console.log('loading scripts/clients.json');
-      $http.get('/advisor-dashboard/scripts/clients.json').success( function(clients) {
+      $http.get('/dashboard/clients').success( function(clients) {
         for (var i=0; i<clients.length; i++) {
           var client = clients[i];
           client.position = new google.maps.LatLng(client.latitude,client.longitude);
@@ -61,6 +66,12 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
 	  
           google.maps.event.addListener(marker, 'click', function() {
             $scope.client = this;
+			$http.get('/dashboard/alerts/79949426').success(function(alerts) {
+				$scope.alerts = alerts;
+			});
+			$http.get('/dashboard/transactions').success(function(transactions) {
+				$scope.transactions = transactions;
+			});
             StreetView.getPanorama(map).then(function(panoId) {
               $scope.panoId = panoId;
             });

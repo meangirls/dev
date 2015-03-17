@@ -5,6 +5,7 @@ var Client = require('./models/client');
 var Account = require('./models/account');
 var Fund = require('./models/fund');
 var Alert = require('./models/alert');
+var Transaction = require('./models/transaction');
 
     module.exports = function(app) {
 
@@ -49,12 +50,29 @@ var Alert = require('./models/alert');
 			});
 		});
 		
+		app.get('/dashboard/alerts/:acctNbr', function(req, res) {
+			Alert.find({acctNbr: req.params.acctNbr}, function(err, alert) {
+				// console.log(alerts);
+                if (err)
+                    res.send(err);
+                res.json(alert); // return the alerts in JSON format
+			});
+		});
+		
 		app.get('/dashboard/accounts', function(req, res) {
 			Account.find({}, function(err, accounts) {
 				// console.log(accounts);
                 if (err)
                     res.send(err);
                 res.json(accounts); // return the alerts in JSON format
+			});
+		});
+		
+		app.get('/dashboard/transactions', function(req, res) {
+			Transaction.find({}, function(err, transactions) {
+                if (err)
+                    res.send(err);
+                res.json(transactions); // return the alerts in JSON format
 			});
 		});
         // route to handle creating goes here (app.post)
