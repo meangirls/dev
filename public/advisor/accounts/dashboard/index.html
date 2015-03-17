@@ -23,6 +23,8 @@
   <!-- endbuild -->
   <script src="/scripts/markerclusterer.js"></script>
 
+<link rel="stylesheet" type="text/css" href="/assets/main.css">
+
   <style>
     html, body {width:100%; height: 100%; margin: 0}
     div#map-container {width: 100%; height: 600px; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; }
@@ -44,62 +46,45 @@
 
 <body>
 
-<div class="ns-header-wide client-search">
-	<div class="ns-outer-control">
-		<div class="ns-body container">
-			<div class="row section-margin">
-				<div class="span12">
-				<img src="/assets/images/topnav.png" width="1581" height="212" border="0">
-				</div>
-			</div>
-		</div>
-	</div>
+
+<div>
+	<img src="/assets/images/topnav.png" width="1581" height="212" border="0">
 </div>
 
-<div class="ns-body-wide fullwidth">
-	<div class="ns-outer-control">
-		<div class="ns-body container">
-			<div class="row section-margin">
-				<div class="span12">
-				
-
-  <tabset>
-    <tab heading="Static title">Static content</tab>
+    <tabset>
+    	<tab heading="Client List: Map View">
+    
+    	<div id="map-container" ng-controller="mapController">
+    	  	<map zoom="4" center="[39.50, -98.35]"></map>
+			<div client-info class="custom-control">Client Info</div>
+		</div>
+    
+   		 </tab>
+    
     <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
-      {{tab.content}}
+     
     </tab>
-    <tab select="alertMe()">
-      <tab-heading>
-        <i class="glyphicon glyphicon-bell"></i> Alert!
-      </tab-heading>
-      I've got an HTML heading, and a select callback. Pretty cool!
+  
+    <tab heading="Client List: Graph View">
+     Bar Graph goes here
     </tab>
-  </tabset>				
-				
-				
-				
-				 	<div id="map-container" ng-controller="mapController">
-      					<map zoom="4" center="[39.50, -98.35]"></map>
-     				 <div client-info class="custom-control">Client Info</div>
-     			</div>
-     		</div>
-     	</div>
-    </div>
-</div>
-				
+      <tab heading="Client List: Table View">
+   		Table goes here
+    </tab>
+    <tab heading="Control Panel">
+   		Table goes here
+    </tab>
+             <tab heading="Financial Transactions">
+   		Table goes here
+    </tab>
+  </tabset>	
 
-<div class="ns-header-wide client-search">
-	<div class="ns-outer-control">
-		<div class="ns-body container">
-			<div class="row section-margin">
-				<div class="span12">
-				<img src="/assets/images/footer.png" width="1581" height="591" border="0">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+ 
 
+
+<div>
+	<img src="/assets/images/footer.png" width="1581" height="591" border="0">
+</div>
 
 </body>
 

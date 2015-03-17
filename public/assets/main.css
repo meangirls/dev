@@ -1777,7 +1777,7 @@ ul.ns-nav-list .selected a{color:#FFF!important;}
 .tabbable{*zoom:1;}
 .tabbable:before,.tabbable:after{display:table;line-height:0;content:"";}
 .tabbable:after{clear:both;}
-.tab-pane{padding:13px;}
+.tab-pane{padding:0px;border-top:2px solid #666}
 .tab-pane.cgc-tab-blue80{background-color:#CCEBF9;color:#000;}
 .tab-pane.cgc-tab-blue80 a{color:#1E5AA0;}
 .tab-pane.cgc-tab-blue80 a:hover{color:#000;}
@@ -1981,3 +1981,251 @@ a#oo_launch_prompt:hover{background:#096;}
 .in-modal .ns-outer-control{width:99%;}
 .in-modal .container{width:99%;}
 .in-modal .ns-outer-control .span12{width:90%;margin-left:48px;}
+
+/* Tabs */
+
+.tabs {
+	overflow: hidden;
+	list-style-type: none;
+	border-top: 3px solid #666;
+	margin: 0;
+	font: 18px/1 "Avenir Next LT W01 Demi", Arial, sans-serif;
+}
+
+.tabs li {
+	display: block;
+	float: left;
+	margin: 0 2px 0 0;
+	white-space: nowrap;
+}
+
+.tabs li a {
+	display: block; /* to make whole box clickable not just linked text */
+	padding: 9px 15px; /* match .btn */
+	color: #FFF;
+	background-color: #808080;
+	background-image: -moz-linear-gradient(top, #999, #808080);
+	background-image: -webkit-linear-gradient(top, #999, #808080);
+	background-image: linear-gradient(to bottom, #999, #808080);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#999999, endColorStr=#808080)";
+}
+
+.tabs li a:hover {
+	background-color: #999;
+	background-image: none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+}
+
+.tabs li.selected a,
+.tabs li.selected a:hover {
+	color: #333;
+	background-color: #FFF;
+	background-image: -moz-linear-gradient(top, #E5E5E5, #FFF);
+	background-image: -webkit-linear-gradient(top, #E5E5E5, #FFF);
+	background-image: linear-gradient(to bottom, #E5E5E5, #FFF);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#E5E5E5, endColorStr=#FFFFFF)";
+	cursor: text;
+}
+
+.tab-content-wrapper {
+	clear: both;
+	padding: 30px 0 0;
+	margin-bottom: 30px;
+}
+
+.tab-content-wrapper.boxed {
+	padding: 13px;
+	border: 1px solid #CCC;
+}
+
+
+/* alt tab styles */
+.secondary-tabs .tabs {
+	padding: 0;
+	border-top: 0 none;
+	line-height: 24px;
+}
+
+.secondary-tabs .tabs li {
+	padding: 0 15px; /* match .btn left/right padding */
+	border-left: 2px solid #666;
+	margin: 0;
+}
+
+.secondary-tabs .tabs li:first-child {
+	border-left: 0 none;
+}
+
+.secondary-tabs .tabs li a {
+	padding: 0;
+	color: #009ADF;
+}
+
+.secondary-tabs .tabs li a,
+.secondary-tabs .tabs li a:hover {
+	background: none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+}
+
+.secondary-tabs .tabs li.selected a,
+.secondary-tabs .tabs li a:hover {
+	color: #333;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.nav > li.disabled > a {
+  color: #999;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eee;
+  border-color: #428bca;
+}
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.nav > li > a > img {
+  max-width: none;
+}
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-tabs > li > a {
+  display: block; /* to make whole box clickable not just linked text */
+	padding: 9px 15px; /* match .btn */
+	color: #FFF;
+	background-color: #808080;
+	background-image: -moz-linear-gradient(top, #999, #808080);
+	background-image: -webkit-linear-gradient(top, #999, #808080);
+	background-image: linear-gradient(to bottom, #999, #808080);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#999999, endColorStr=#808080)";
+}
+.nav-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	color: #333;
+	background-color: #FFF;
+	background-image: -moz-linear-gradient(top, #E5E5E5, #FFF);
+	background-image: -webkit-linear-gradient(top, #E5E5E5, #FFF);
+	background-image: linear-gradient(to bottom, #E5E5E5, #FFF);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#E5E5E5, endColorStr=#FFFFFF)";
+	cursor: text;
+	
+  
+}
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+.nav-stacked > li {
+  float: none;
+}
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+.nav-justified {
+  width: 100%;
+}
+.nav-justified > li {
+  float: none;
+}
+.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
