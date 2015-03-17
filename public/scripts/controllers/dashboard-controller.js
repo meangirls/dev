@@ -47,6 +47,14 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
           var client = clients[i];
           client.position = new google.maps.LatLng(client.latitude,client.longitude);
           client.title = client.name.first + " " + client.name.last + " " + client.address;
+          client.icon = {
+        	  path: google.maps.SymbolPath.CIRCLE,
+          		scale: 8,
+          		fillOpacity: 1,
+          		fillColor: 'red',
+          		strokeColor: '#ccc',
+          		strokeWeight: 1
+          }
 	  
           var marker = new google.maps.Marker(client);
 	  //marker.setIcon(client.markerImage);
