@@ -27,8 +27,36 @@ var mcOptions = {
     maxZoom: 15
 };
 
-var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
+var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'nvd3ChartDirectives']);
 
+
+
+ function ExampleCtrl($scope){
+ 
+ $scope.xFunction = function(){
+    return function(d) {
+        return d.key;
+    };
+}
+
+ $scope.yFunction = function(){
+	return function(d){
+		return d.y;
+	};
+}
+
+ $scope.exampleData = [
+      	{ key: "One", y: 5 },
+         { key: "Two", y: 2 },
+         { key: "Three", y: 9 },
+        { key: "Four", y: 7 },
+        { key: "Five", y: 4 },
+        { key: "Six", y: 3 },
+       { key: "Seven", y: 9 }
+    ];
+ }
+
+    
   app.controller('mapController', function($scope, $http, StreetView) {
 	  
 	  $scope.tabs = [

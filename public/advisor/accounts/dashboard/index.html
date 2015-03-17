@@ -24,8 +24,12 @@
   <script src="/scripts/markerclusterer.js"></script>
   
 <script src="/libs/angular/angular.js"></script>
+	  <script src="/libs/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
 	<script src="/libs/d3/d3.js"></script>
-	<script src="/libs/angular-charts/dist/angular-charts.js"></script>
+    <script src="/libs/nvd3/nv.d3.js"></script>
+	
+	<!-- <script src="/libs/angular-charts/dist/angular-charts.js"></script> -->
+	
 	
 <link rel="stylesheet" type="text/css" href="/assets/main.css">
 
@@ -60,9 +64,9 @@
     
     	<div id="map-container" ng-controller="mapController">
     	  	<map zoom="4" center="[39.50, -98.35]"></map>
-			<div client-info class="custom-control">Client Info</div>
+			<div client-info class="custom-control">Client Info</div>		    
 		</div>
-    
+
    		 </tab>
     
     <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
