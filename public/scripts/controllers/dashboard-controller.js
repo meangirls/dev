@@ -3,9 +3,9 @@ var clusterStyles = [
   
  {
     textColor: 'white',
-    url: '/assets/images/78.png',
-    height: 78,
-    width: 78
+    url: '/assets/images/56.png',
+    height: 56,
+    width: 56
   },
  {
     textColor: 'white',
@@ -15,9 +15,9 @@ var clusterStyles = [
 },
  {
     textColor: 'white',
-    url: '/assets/images/56.png',
-    height: 56,
-    width: 56
+    url: '/assets/images/78.png',
+    height: 78,
+    width: 78
 }
 ];
 
@@ -67,7 +67,7 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap']);
           $scope.clients.push(marker); 
         }
         //console.log('finished loading scripts/starbucks.json', '$scope.clients', $scope.clients.length);
-        $scope.markerClusterer = new MarkerClusterer(map, $scope.clients, {});
+        $scope.markerClusterer = new MarkerClusterer(map, $scope.clients, mcOptions);
         //$scope.fullScreenToggle.click();
       });
     });

@@ -1777,7 +1777,7 @@ ul.ns-nav-list .selected a{color:#FFF!important;}
 .tabbable{*zoom:1;}
 .tabbable:before,.tabbable:after{display:table;line-height:0;content:"";}
 .tabbable:after{clear:both;}
-.tab-pane{padding:13px;}
+.tab-pane{padding:0px;border-top:2px solid #666}
 .tab-pane.cgc-tab-blue80{background-color:#CCEBF9;color:#000;}
 .tab-pane.cgc-tab-blue80 a{color:#1E5AA0;}
 .tab-pane.cgc-tab-blue80 a:hover{color:#000;}
