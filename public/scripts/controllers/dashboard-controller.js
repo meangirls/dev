@@ -101,8 +101,8 @@ app.config(function($sceProvider) {
             StreetView.getPanorama(map).then(function(panoId) {
               $scope.panoId = panoId;
             });
-            map.setZoom(14);
-            map.setCenter(this.getPosition());
+            //map.setZoom(14);
+            //map.setCenter(this.getPosition());
 			
 
 			

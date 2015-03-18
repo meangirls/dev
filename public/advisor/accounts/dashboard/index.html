@@ -107,7 +107,7 @@
     </tab>
       <tab heading="Client List: Table View">
 
-   			<table ng:controller="SortableTableCtrl" class="row-separators full-width" style="margin-top:30px; width: 800px; margin-left">
+   			<table ng:controller="SortableTableCtrl" class="row-separators full-width" style="margin-top:30px; margin-left:30px; width: 800px; margin-left">
           <thead>
             <tr>
               <th scope="col" ng:repeat="(i,th) in head" ng:class="selectedCls(i)" ng:click="changeSorting(i)">{{th}}</th>
@@ -124,8 +124,8 @@
     <tab heading="Control Panel">
    		<img src="/assets/images/control-panel.png" width="1024" height="725" />
     </tab>
-             <tab heading="Financial Transactions">
-   		Table goes here
+             <tab heading="Recent Transactions">
+   		<img src="/assets/images/recent-transactions.png" width="1025" height="716" />
     </tab>
   </tabset>	
 
