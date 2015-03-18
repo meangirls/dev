@@ -31,7 +31,8 @@
 		  		color="colorFunction()"
 				pieLabelsOutside="true"
 				showLegend = "false"
-			 	tooltips="true">
+			 	tooltips="true"
+			 	margin="{left:50,top:0,bottom:0,right:0}">
 		    </nvd3-pie-chart>
 			</div>
 		</div>
@@ -41,7 +42,7 @@
 <div id="notifications" class="section-margin" ng-show="alerts">
 	<h3 class="hr hr-thick">Notifications</h3>
 	<div ng-repeat="alert in alerts">
-		<ul>
+		<ul style="list-style-type:none;padding-left:0">
 			<li ng-bind-html="alert.message"></li>
 			<p>{{alert.date}}</p>
 		</ul>

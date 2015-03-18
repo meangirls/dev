@@ -2243,11 +2243,16 @@ div#client-info .close.btn {
 }
 
 #exampleId > svg {
-	height: 390px;
+	height:420px;
 }
 
 #accounts > div.ng-isolate-scope > div > div.tab-pane.ng-scope.active {
 	display:none;
 }
+
+#notifications li a strong {
+	font-weight:bold;
+}
+
 
 
