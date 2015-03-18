@@ -75,6 +75,14 @@ var Transaction = require('./models/transaction');
                 res.json(transactions); // return the alerts in JSON format
 			});
 		});
+		
+		app.get('/dashboard/transactions/:acctNbr', function(req, res) {
+			Transaction.find({acctNbr: req.params.acctNbr}, function(err, trans) {
+                if (err)
+                    res.send(err);
+                res.json(trans); // return the alerts in JSON format
+			});
+		});
         // route to handle creating goes here (app.post)
         // route to handle delete goes here (app.delete)
 

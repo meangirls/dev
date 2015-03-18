@@ -4,7 +4,7 @@
                
 <a class="hide-link close btn pull-right" ng-click="clientInfo.hide()" href=""><span class="icon"></span></a>
 
-<h3> {{client.name}} </h3>
+<h3> {{client.name.first}} {{client.name.middle}} {{client.name.last}}</h3>
 <table class="row-seperators">
 <tr>
   <td> Address </td> 
@@ -29,6 +29,15 @@
 </select>
 
 <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
+
+<div id="accounts" class="section-margin">
+	<h3 class="hr hr-thick">Accounts</h3>
+	<div ng-repeat="account in accounts">
+		<ul>
+			<li>{{account.acctNbr}}</li>
+		</ul>
+	</div>
+</div>
 
 <div id="notifications" class="section-margin">
 	<h3 class="hr hr-thick">Notifications</h3>

@@ -87,11 +87,21 @@ app.config(function($sceProvider) {
 	  
           google.maps.event.addListener(marker, 'click', function() {
             $scope.client = this;
-			$http.get('/dashboard/alerts/79949426').success(function(alerts) {
-				$scope.alerts = alerts;
-			});
-			$http.get('/dashboard/transactions').success(function(transactions) {
-				$scope.transactions = transactions;
+			$scope.alerts = [];
+			$scope.transactions = [];
+			$http.get('/dashboard/client/' + this.id + '/accounts').success(function(data) {
+				$scope.accounts = data;
+				if (data.length > 0) {
+					var accountNumber = data[0].acctNbr;
+					if (this.alert) {
+						$http.get('/dashboard/alerts/' + accountNumber).success(function(alerts) {
+						$scope.alerts = alerts;
+						})
+					}
+					$http.get('/dashboard/transactions/' + accountNumber).success(function(transactions) {
+						$scope.transactions = transactions;
+					})
+				}
 			});
             StreetView.getPanorama(map).then(function(panoId) {
               $scope.panoId = panoId;
