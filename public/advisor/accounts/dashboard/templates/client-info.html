@@ -1,23 +1,18 @@
-<pageslide ps-open="checked" ps-target="#client-info" ps-close="true" ps-custom-height="600px"></pageslide> 
+<pageslide ps-open="checked" ps-target="#client-info" ps-close="true"></pageslide> 
 <div style="padding:20px;" id="client-info" class="inverse">
                     
                
 <a class="hide-link close btn pull-right" ng-click="clientInfo.hide()" href=""><span class="icon"></span></a>
 
-<h3> {{client.name.first}} {{client.name.middle}} {{client.name.last}}</h3>
-<table class="row-seperators">
-<tr>
-  <td> Address </td> 
-  <td> {{client.address}} <br/> 
-    {{client.city}} {{client.postal_code}} {{client.country}} <br/>
-  </td>
-</tr>
-</table>
+<h2>{{client.name.first}} {{client.name.middle}} {{client.name.last}}</h2>
+<p>{{client.address}}<br />
+{{client.city}} {{client.postal_code}}</p>
 
 <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
 
-<tabset>
-	<tab heading="Accounts">
+
+	<div id="accounts" class="section-margin">
+		<h3 class="hr hr-thick">Accounts</h3>
 		<div class="pull-left" style="width:90px;">
 			<tabset vertical="true" type="pills">
 				<tab ng-repeat="tab in accounts" heading="{{tab.acctType}}">{{tab.acctType}} content goes here </tab>
@@ -37,40 +32,42 @@
 		</div>
 	</tab>   
 		    
-	<tab heading="Notifications">
-		<div ng-repeat="alert in alerts">
-			<ul>
-				<li ng-bind-html="alert.message"></li>
-				<p>{{alert.date}}</p>
-			</ul>
-		</div>
-	
-	</tab>
+		    
+<div id="notifications" class="section-margin" ng-show="alerts">
+	<h3 class="hr hr-thick">Notifications</h3>
+	<div ng-repeat="alert in alerts">
+		<ul>
+			<li ng-bind-html="alert.message"></li>
+			<p>{{alert.date}}</p>
+		</ul>
+	</div>
+	</h4>
+</div>
 
 
+<div id="transactions" class="section-margin" ng-show="transactions">
+	<h3 class="hr hr-thick">Recent Transactions</h3>
+	<table class="row-separators full-width">
+		<thead>
+			<tr>
+				<th scope="col">Date</th>
+				<th scope="col">Fund</th>
+				<th scope="col">Category</th>
+				<th class="align-right" scope="col">Amount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="transaction in transactions">
+				<td>{{transaction.date}}</td>
+				<td>{{transaction.fundName}}</td>
+				<td>{{transaction.category}}</td>
+				<td class="align-right">{{transaction.amount | currency}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
-	<tab heading="Recent Transactions">
-		<table class="row-separators full-width">
-			<thead>
-				<tr>
-					<th scope="col">Date</th>
-					<th scope="col">Fund</th>
-					<th scope="col">Category</th>
-					<th class="align-right" scope="col">Amount</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="transaction in transactions">
-					<td>{{transaction.date}}</td>
-					<td>{{transaction.fundName}}</td>
-					<td>{{transaction.category}}</td>
-					<td class="align-right">{{transaction.amount | currency}}</td>
-				</tr>
-			</tbody>
-		</table>
-	</tab>
-</tabset>
 
-<div><a class="button button-wide">Go to Client's Portfolio</a></div>
+<div><a class="btn btn-wide">Go to Client's Portfolio</a></div>
 
 </div>
