@@ -1,7 +1,7 @@
 app.controller('barChartController',  function($scope, $http) {
     $scope.allClients = [];
     $scope.checked;
-    $http.get('/advisor-dashboard/scripts/clients.json').success( function(clients) {
+    $http.get('/dashboard/clients').success( function(clients) {
     	$scope.allClients = clients;
     
     	

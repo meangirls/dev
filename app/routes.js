@@ -15,7 +15,7 @@ var Allocation = require('./models/allocation');
         // authentication routes
         // sample api route
         app.get('/dashboard/clients', function(req, res) {
-			Client.find({}, function(err, clients) {
+			Client.find().sort({"totalAssets": -1}).exec(function(err, clients) {
 				// console.log(clients);
                 if (err)
                     res.send(err);
