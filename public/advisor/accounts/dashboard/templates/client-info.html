@@ -10,27 +10,27 @@
 
 <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
 
-<div id="accounts" class="section-margin">
-	<h3 class="hr hr-thick">Accounts</h3>
-	<div ng-repeat="account in accounts">
-		<ul>
-			<li>{{account.acctNbr}}</li>
-		</ul>
-	</div>
-</div>
-		
-<div ng-controller="ExampleCtrl">
-	<nvd3-pie-chart
-    	data="exampleData"
-        id="exampleId"
-        width="550"
-        height="350"
-        x="xFunction()"
-        y="yFunction()"
-        showLabels="true"
-	color="colorFunction()">
-    </nvd3-pie-chart>
-</div>
+
+	<div id="accounts" class="section-margin">
+		<h3 class="hr hr-thick">Accounts</h3>
+		<div class="pull-left" style="width:90px;">
+			<tabset vertical="true" type="pills">
+				<tab ng-repeat="tab in accounts" heading="{{tab.acctType}}">{{tab.acctType}} content goes here </tab>
+			</tabset>
+		</div>		
+		<div ng-controller="ExampleCtrl">
+			<nvd3-pie-chart
+		    	data="exampleData"
+		        id="exampleId"
+		        width="300"
+		        height="300"
+		        x="xFunction()"
+		        y="yFunction()"
+		        showLabels="true"
+			color="colorFunction()">
+		    </nvd3-pie-chart>
+		</div>
+	</tab>   
 		    
 		    
 <div id="notifications" class="section-margin" ng-show="alerts">
@@ -66,6 +66,7 @@
 		</tbody>
 	</table>
 </div>
+
 
 <div><a class="btn btn-wide">Go to Client's Portfolio</a></div>
 
