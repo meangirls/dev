@@ -107,7 +107,7 @@
     </tab>
       <tab heading="Client List: Table View">
 
-   			<table ng:controller="SortableTableCtrl" class="row-separators full-width" style="margin-top:30px; width: 800px">
+   			<table ng:controller="SortableTableCtrl" class="row-separators full-width" style="margin-top:30px; width: 800px; margin-left">
           <thead>
             <tr>
               <th scope="col" ng:repeat="(i,th) in head" ng:class="selectedCls(i)" ng:click="changeSorting(i)">{{th}}</th>
