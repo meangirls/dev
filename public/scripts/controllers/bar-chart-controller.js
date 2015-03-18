@@ -26,13 +26,18 @@ app.controller('barChartController',  function($scope, $http) {
 //
 		var options = {
 			colors: ["#33aee5","#66C2EC"],
-			width: 1200,
-			height: 1500,
+			width: 1500,
+			height: $scope.allClients.length * 36,
 			fontSize: 12,
 			//height: $scope.allClients.length * 20,
 			//chartArea: {'width': '100%', 'height': '80%'}
 			//height: 100
-			chartArea:{left:150,top:20,width:"100%",height:"100%"},
+			 axes: {
+		            x: {
+		              0: { side: 'top', label: 'Percentage'} // Top x-axis.
+		            }
+		          },
+			chartArea:{left:150,top:20},
 			hAxis: {viewWindowMode: "pretty", titleTextStyle: {color: 'black', fontName: "Avenir Next LT W01 Demi", fontSize: "14px"}}
 		};
 //		
