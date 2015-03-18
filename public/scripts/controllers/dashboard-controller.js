@@ -44,11 +44,11 @@ app.config(function($sceProvider) {
 				console.log("VIMMVIMMVIMM");
 				console.log(allocations);
 				var colors= [
-					 			'#1E5AA0',
-								'#33AEE5',
-								'#008F45',
-								'#81B24F',
-								'#F2B900'
+					 			'#33AEE5',
+								'#999999',
+								'#66C2EC',
+								'#EEEEEE',
+								'#99D7F2'
 							];
 				//var colorArray = ['#000000', '#660000', '#CC0000', '#FF6666', '#FF3333', '#FF6666', '#FFE6E6'];
 $scope.colorFunction = function() {
@@ -61,7 +61,8 @@ $scope.colorFunction = function() {
 					console.log("looping");
 					console.log({key: allocations[i].fundAbbreviation, y: allocations[i].percent} );
 				//	console.log(allocation[i].fundAbbreviation);
-					 $scope.exampleData[i]={key: allocations[i].fundAbbreviation, y: allocations[i].percent} ;
+					var label = allocations[i].fundAbbreviation
+					 $scope.exampleData[i]={key: label, y: allocations[i].percent} ;
 				 }
 				 
 				 
