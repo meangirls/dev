@@ -54,6 +54,8 @@ app.config(function($sceProvider) {
     $scope.$on('mapInitialized', function(event, evtMap) {
       map = evtMap;
       $scope.map = map;
+	  
+	  
       console.log('loading scripts/clients.json');
       $http.get('/dashboard/clients').success( function(clients) {
     	
@@ -102,6 +104,7 @@ app.config(function($sceProvider) {
             //map.setZoom(18);
             //map.setCenter(this.getPosition());
 			
+
 			
 			$http.get('/dashboard/allocations/' + $scope.firstAccount).success(function(allocations) {
 				
@@ -122,7 +125,10 @@ $scope.colorFunction = function() {
     	return colors[i];
     };
 }	
-				 $scope.exampleData = [];
+				 $scope.exampleData = [
+				 { key: "AMCAP", y: 5 },
+         { key: "EUPAC", y: 2 },
+         { key: "AMBAL", y: 9 }];
 				 for (var i=0; i<allocations.length; i++) {
 					var label = allocations[i].fundQuotron
 					 $scope.exampleData[i]={key: label, y: allocations[i].allocation} ;
@@ -149,6 +155,7 @@ $scope.colorFunction = function() {
 			
 			
             $scope.clientInfo.show();
+			
           });
         
 
