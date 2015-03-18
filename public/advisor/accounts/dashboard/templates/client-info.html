@@ -1,4 +1,4 @@
-<pageslide ps-open="checked" ps-target="#client-info" ps-close="true"></pageslide> 
+<pageslide ps-open="checked" ps-target="#client-info" ps-close="true" ps-custom-height="600px"></pageslide> 
 <div style="padding:20px;" id="client-info" class="inverse">
                     
                
@@ -10,11 +10,15 @@
 
 	<div id="accounts" class="section-margin">
 		<h3 class="hr hr-thick">Accounts</h3>
-		<div class="pull-left" style="width:90px;">
-			<tabset vertical="true" type="pills">
-				<tab ng-repeat="tab in accounts" heading="{{tab.acctType}}">{{tab.acctType}} content goes here </tab>
+	
+			<tabset  type="pills">
+				<tab ng-repeat="tab in accounts" heading="{{tab.acctType}}">	
+				
+				</tab>
 			</tabset>
 		</div>		
+		<div>
+			
 		<div>
 			<nvd3-pie-chart
 		    	data="exampleData"
@@ -26,11 +30,12 @@
 		        showLabels="true"
 		  		color="colorFunction()"
 				pieLabelsOutside="true"
-				showLegend = "true"
+				showLegend = "false"
 			 	tooltips="true">
 		    </nvd3-pie-chart>
+			</div>
 		</div>
-	</tab>   
+			  
 		    
 		    
 <div id="notifications" class="section-margin" ng-show="alerts">

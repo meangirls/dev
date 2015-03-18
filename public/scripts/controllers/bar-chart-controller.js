@@ -26,7 +26,7 @@ app.controller('barChartController',  function($scope, $http) {
 //
 		var options = {
 			colors: ["#33aee5","#66C2EC"],
-			width: 1500,
+			width: 1024,
 			height: $scope.allClients.length * 36,
 			fontSize: 12,
 			//height: $scope.allClients.length * 20,

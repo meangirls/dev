@@ -2242,7 +2242,12 @@ div#client-info .close.btn {
 	padding:0 0 0 5px;
 }
 
+#exampleId > svg {
+	height: 390px;
+}
 
-
+#accounts > div.ng-isolate-scope > div > div.tab-pane.ng-scope.active {
+	display:none;
+}
 
 
