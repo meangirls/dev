@@ -78,10 +78,8 @@
     </tab>
   
     <tab heading="Client List: Graph View">
-    <div ng-controller="barChartController" id="barChart">
-        <div ng-repeat="client in allClients">
-          {{client.name.first}}
-        </div>
+    <div ng-controller="barChartController" id="barChart" style="width:1200px;height:1500px">
+   	 <div client-info class="custom-control">Client Info</div>
       </div>
     </tab>
       <tab heading="Client List: Table View">
