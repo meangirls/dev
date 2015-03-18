@@ -16,61 +16,60 @@
 
 <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
 
-<div id="accounts" class="section-margin">
-	<h3 class="hr hr-thick">Accounts</h3>
-	<div ng-repeat="account in accounts">
-		<ul>
-			<li>{{account.acctNbr}}</li>
-		</ul>
-	</div>
-</div>
-		
-<div ng-controller="ExampleCtrl">
-	<nvd3-pie-chart
-    	data="exampleData"
-        id="exampleId"
-        width="550"
-        height="350"
-        x="xFunction()"
-        y="yFunction()"
-        showLabels="true"
-	color="colorFunction()">
-    </nvd3-pie-chart>
-</div>
+<tabset>
+	<tab heading="Accounts">
+		<div class="pull-left" style="width:90px;">
+			<tabset vertical="true" type="pills">
+				<tab ng-repeat="tab in accounts" heading="{{tab.acctType}}">{{tab.acctType}} content goes here </tab>
+			</tabset>
+		</div>		
+		<div ng-controller="ExampleCtrl">
+			<nvd3-pie-chart
+		    	data="exampleData"
+		        id="exampleId"
+		        width="300"
+		        height="300"
+		        x="xFunction()"
+		        y="yFunction()"
+		        showLabels="true"
+			color="colorFunction()">
+		    </nvd3-pie-chart>
+		</div>
+	</tab>   
 		    
-		    
-<div id="notifications" class="section-margin">
-	<h3 class="hr hr-thick">Notifications</h3>
-	<div ng-repeat="alert in alerts">
-		<ul>
-			<li ng-bind-html="alert.message"></li>
-			<p>{{alert.date}}</p>
-		</ul>
-	</div>
-	</h4>
-</div>
+	<tab heading="Notifications">
+		<div ng-repeat="alert in alerts">
+			<ul>
+				<li ng-bind-html="alert.message"></li>
+				<p>{{alert.date}}</p>
+			</ul>
+		</div>
+	
+	</tab>
 
-<div id="transactions" class="section-margin">
-	<h3 class="hr hr-thick">Recent Transactions</h3>
-	<table class="row-separators full-width">
-		<thead>
-			<tr>
-				<th scope="col">Date</th>
-				<th scope="col">Fund</th>
-				<th scope="col">Category</th>
-				<th class="align-right" scope="col">Amount</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr ng-repeat="transaction in transactions">
-				<td>{{transaction.date}}</td>
-				<td>{{transaction.fundName}}</td>
-				<td>{{transaction.category}}</td>
-				<td class="align-right">{{transaction.amount | currency}}</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
+
+
+	<tab heading="Recent Transactions">
+		<table class="row-separators full-width">
+			<thead>
+				<tr>
+					<th scope="col">Date</th>
+					<th scope="col">Fund</th>
+					<th scope="col">Category</th>
+					<th class="align-right" scope="col">Amount</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="transaction in transactions">
+					<td>{{transaction.date}}</td>
+					<td>{{transaction.fundName}}</td>
+					<td>{{transaction.category}}</td>
+					<td class="align-right">{{transaction.amount | currency}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</tab>
+</tabset>
 
 <div><a class="button button-wide">Go to Client's Portfolio</a></div>
 
