@@ -37,8 +37,35 @@ app.config(function($sceProvider) {
 
 
 
- function ExampleCtrl($scope){
- 
+ function ExampleCtrl($scope, $http){
+ $http.get('/advisor-dashboard/scripts/allocations.json').success(function(allocations) {
+				
+				//$scope.transactions = transactions;
+				console.log("VIMMVIMMVIMM");
+				console.log(allocations);
+				var colors= [
+					 			'#1E5AA0',
+								'#33AEE5',
+								'#008F45',
+								'#81B24F',
+								'#F2B900'
+							];
+				//var colorArray = ['#000000', '#660000', '#CC0000', '#FF6666', '#FF3333', '#FF6666', '#FFE6E6'];
+$scope.colorFunction = function() {
+	return function(d, i) {
+    	return colors[i];
+    };
+}	
+				 $scope.exampleData = [];
+				 for (var i=0; i<allocations.length; i++) {
+					console.log("looping");
+					console.log({key: allocations[i].fundAbbreviation, y: allocations[i].percent} );
+				//	console.log(allocation[i].fundAbbreviation);
+					 $scope.exampleData[i]={key: allocations[i].fundAbbreviation, y: allocations[i].percent} ;
+				 }
+				 
+				 
+			});
  $scope.xFunction = function(){
     return function(d) {
         return d.key;
@@ -51,7 +78,7 @@ app.config(function($sceProvider) {
 	};
 }
 
- $scope.exampleData = [
+ $scope.vimmexampleData = [
       	{ key: "One", y: 5 },
          { key: "Two", y: 2 },
          { key: "Three", y: 9 },
@@ -60,6 +87,8 @@ app.config(function($sceProvider) {
         { key: "Six", y: 3 },
        { key: "Seven", y: 9 }
     ];
+    // $http.get('/advisor-dashboard/scripts/allocations.json').success( function(allocations) {
+    	
  }
 
     
