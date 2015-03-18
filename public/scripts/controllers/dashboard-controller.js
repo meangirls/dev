@@ -37,60 +37,6 @@ app.config(function($sceProvider) {
 
 
 
- function ExampleCtrl($scope, $http){
- $http.get('/advisor-dashboard/scripts/allocations.json').success(function(allocations) {
-				
-				//$scope.transactions = transactions;
-				console.log("VIMMVIMMVIMM");
-				console.log(allocations);
-				var colors= [
-					 			'#33AEE5',
-								'#999999',
-								'#66C2EC',
-								'#EEEEEE',
-								'#99D7F2'
-							];
-				//var colorArray = ['#000000', '#660000', '#CC0000', '#FF6666', '#FF3333', '#FF6666', '#FFE6E6'];
-$scope.colorFunction = function() {
-	return function(d, i) {
-    	return colors[i];
-    };
-}	
-				 $scope.exampleData = [];
-				 for (var i=0; i<allocations.length; i++) {
-					console.log("looping");
-					console.log({key: allocations[i].fundAbbreviation, y: allocations[i].percent} );
-				//	console.log(allocation[i].fundAbbreviation);
-					var label = allocations[i].fundAbbreviation
-					 $scope.exampleData[i]={key: label, y: allocations[i].percent} ;
-				 }
-				 
-				 
-			});
- $scope.xFunction = function(){
-    return function(d) {
-        return d.key;
-    };
-}
-
- $scope.yFunction = function(){
-	return function(d){
-		return d.y;
-	};
-}
-
- $scope.vimmexampleData = [
-      	{ key: "One", y: 5 },
-         { key: "Two", y: 2 },
-         { key: "Three", y: 9 },
-        { key: "Four", y: 7 },
-        { key: "Five", y: 4 },
-        { key: "Six", y: 3 },
-       { key: "Seven", y: 9 }
-    ];
-    // $http.get('/advisor-dashboard/scripts/allocations.json').success( function(allocations) {
-    	
- }
 
     
   app.controller('mapController', function($scope, $http, StreetView) {
@@ -135,6 +81,7 @@ $scope.colorFunction = function() {
 			$scope.transactions = [];
 			$http.get('/dashboard/client/' + this.id + '/accounts').success(function(data) {
 				$scope.accounts = data;
+				$scope.firstAccount = data[0].acctNbr;
 				for (var j=0;j<data.length; j++) {
 					var accountNumber = data[j].acctNbr;
 					if (this.alert) {
@@ -143,7 +90,7 @@ $scope.colorFunction = function() {
 							$scope.alerts = alerts;
 						})
 					}
-					$http.get('/dashboard/transactions/' + accountNumber).success(function(transactions) {
+					$http.get('/dashboard/transactions/' + $scope.firstAccount).success(function(transactions) {
 						if (transactions.length >0)
 							$scope.transactions = transactions;
 					})
@@ -154,6 +101,53 @@ $scope.colorFunction = function() {
             });
             //map.setZoom(18);
             //map.setCenter(this.getPosition());
+			
+			
+			$http.get('/dashboard/allocations/' + $scope.firstAccount).success(function(allocations) {
+				
+				//$scope.transactions = transactions;
+
+				console.log(allocations);
+				console.log("THIS IS THE FIRST ACCOUNT:" + $scope.firstAccount);
+				var colors= [
+					 			'#33AEE5',
+								'#999999',
+								'#66C2EC',
+								'#EEEEEE',
+								'#99D7F2'
+							];
+				//var colorArray = ['#000000', '#660000', '#CC0000', '#FF6666', '#FF3333', '#FF6666', '#FFE6E6'];
+$scope.colorFunction = function() {
+	return function(d, i) {
+    	return colors[i];
+    };
+}	
+				 $scope.exampleData = [];
+				 for (var i=0; i<allocations.length; i++) {
+					var label = allocations[i].fundQuotron
+					 $scope.exampleData[i]={key: label, y: allocations[i].allocation} ;
+				 }
+				 
+				 
+			});
+ $scope.xFunction = function(){
+    return function(d) {
+        return d.key;
+    };
+}
+
+ $scope.yFunction = function(){
+	return function(d){
+		return d.y;
+	};
+}
+
+			
+			
+			
+			
+			
+			
             $scope.clientInfo.show();
           });
         
