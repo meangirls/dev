@@ -28,8 +28,7 @@ var mcOptions = {
 };
 
 
-
-var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'pageslide-directive']);
+var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'pageslide-directive', 'nvd3ChartDirectives']);
 app.config(function($sceProvider) {
   // Completely disable SCE.  For demonstration purposes only!!
   // Do not use in new projects.
@@ -37,6 +36,62 @@ app.config(function($sceProvider) {
 });
 
 
+
+ function ExampleCtrl($scope, $http){
+ $http.get('/advisor-dashboard/scripts/allocations.json').success(function(allocations) {
+				
+				//$scope.transactions = transactions;
+				console.log("VIMMVIMMVIMM");
+				console.log(allocations);
+				var colors= [
+					 			'#1E5AA0',
+								'#33AEE5',
+								'#008F45',
+								'#81B24F',
+								'#F2B900'
+							];
+				//var colorArray = ['#000000', '#660000', '#CC0000', '#FF6666', '#FF3333', '#FF6666', '#FFE6E6'];
+$scope.colorFunction = function() {
+	return function(d, i) {
+    	return colors[i];
+    };
+}	
+				 $scope.exampleData = [];
+				 for (var i=0; i<allocations.length; i++) {
+					console.log("looping");
+					console.log({key: allocations[i].fundAbbreviation, y: allocations[i].percent} );
+				//	console.log(allocation[i].fundAbbreviation);
+					 $scope.exampleData[i]={key: allocations[i].fundAbbreviation, y: allocations[i].percent} ;
+				 }
+				 
+				 
+			});
+ $scope.xFunction = function(){
+    return function(d) {
+        return d.key;
+    };
+}
+
+ $scope.yFunction = function(){
+	return function(d){
+		return d.y;
+	};
+}
+
+ $scope.vimmexampleData = [
+      	{ key: "One", y: 5 },
+         { key: "Two", y: 2 },
+         { key: "Three", y: 9 },
+        { key: "Four", y: 7 },
+        { key: "Five", y: 4 },
+        { key: "Six", y: 3 },
+       { key: "Seven", y: 9 }
+    ];
+    // $http.get('/advisor-dashboard/scripts/allocations.json').success( function(allocations) {
+    	
+ }
+
+    
   app.controller('mapController', function($scope, $http, StreetView) {
 	  
 	  $scope.checked;
@@ -59,28 +114,16 @@ app.config(function($sceProvider) {
           var client = clients[i];
           client.position = new google.maps.LatLng(client.latitude,client.longitude);
           client.title = client.name.first + " " + client.name.last + " " + client.address;
-          
-          if (client.markerImage == "large") {
-        	  client.icon = {
-        			  scale: 12,
-        			  path: google.maps.SymbolPath.CIRCLE,
-        		fillOpacity: 1,
-        		fillColor: 'red',
-        		strokeColor: '#333',
-        		strokeWeight: 2
-        	  }
-          }
-          else {
-        	  client.icon = {
-                	  path: google.maps.SymbolPath.CIRCLE,
-                  		scale: 8,
-                  		fillOpacity: 1,
-                  		fillColor: 'red',
-                		strokeColor: '#333',
-                  		strokeWeight: 2
-                  }
-          }
          
+    	  client.icon = {
+    		scale: (client.markerImage == "large") ? 12 : 8,
+    		path: google.maps.SymbolPath.CIRCLE,
+    		fillOpacity: 1,
+    		fillColor: (client.alert == true) ? 'yellow' : ((client.financialTransaction == true ? 'green' : 'red')),
+    		strokeColor: (client.alert == true && client.financialTransaction == true) ? 'green' : '#333',
+    		strokeWeight: (client.alert == true && client.financialTransaction == true) ? 5 : 2
+    	  }
+                 
 	  
           var marker = new google.maps.Marker(client);
 	  //marker.setIcon(client.markerImage);

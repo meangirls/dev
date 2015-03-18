@@ -1,5 +1,5 @@
 <pageslide ps-open="checked" ps-target="#client-info" ps-close="true"></pageslide> 
-<div style="padding:20px" id="client-info" class="inverse">
+<div style="padding:20px;overflow:auto" id="client-info" class="inverse">
                     
                
 <a class="hide-link close btn pull-right" ng-click="clientInfo.hide()" href=""><span class="icon"></span></a>
@@ -12,21 +12,7 @@
     {{client.city}} {{client.postal_code}} {{client.country}} <br/>
   </td>
 </tr>
-<tr>
-  <td> Coordinates </td> 
-  <td> 
-    Latitude: {{client.latitude}} <br/>
-    Longitude: {{client.longitude}}
-  </td>
-</tr>
 </table>
-<select ng-model="chartType">
-	<option value="pie">pie</option>
-	<option value="bar">bar</option>
-	<option value="line">line</option>
-    <option value="point">point</option>
-    <option value="area">area</option>
-</select>
 
 <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
 
@@ -38,7 +24,21 @@
 		</ul>
 	</div>
 </div>
-
+		
+<div ng-controller="ExampleCtrl">
+	<nvd3-pie-chart
+    	data="exampleData"
+        id="exampleId"
+        width="550"
+        height="350"
+        x="xFunction()"
+        y="yFunction()"
+        showLabels="true"
+	color="colorFunction()">
+    </nvd3-pie-chart>
+</div>
+		    
+		    
 <div id="notifications" class="section-margin">
 	<h3 class="hr hr-thick">Notifications</h3>
 	<div ng-repeat="alert in alerts">
@@ -51,14 +51,14 @@
 </div>
 
 <div id="transactions" class="section-margin">
-	<h3 class="hr hr-thick">Transactions</h3>
-	<table class="row-separators">
+	<h3 class="hr hr-thick">Recent Transactions</h3>
+	<table class="row-separators full-width">
 		<thead>
 			<tr>
-				<th>Date</th>
-				<th>Fund</th>
-				<th>Category</th>
-				<th>Amount</th>
+				<th scope="col">Date</th>
+				<th scope="col">Fund</th>
+				<th scope="col">Category</th>
+				<th class="align-right" scope="col">Amount</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -66,10 +66,12 @@
 				<td>{{transaction.date}}</td>
 				<td>{{transaction.fundName}}</td>
 				<td>{{transaction.category}}</td>
-				<td>{{transaction.amount}}</td>
+				<td class="align-right">{{transaction.amount | currency}}</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
-</div>
 
+<div><a class="button button-wide">Go to Client's Portfolio</a></div>
+
+</div>

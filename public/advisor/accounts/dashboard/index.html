@@ -14,6 +14,7 @@
   <!-- build:js scripts/ng-map.min.js -->
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/dashboard-controller.js"></script>
+  <script src="/scripts/controllers/bar-chart-controller.js"></script>
   <script src="/scripts/controllers/table-controller.js"></script>
   <script src="/scripts/directives/map_controller.js"></script>
   <script src="/scripts/directives/google-charts.js"></script>
@@ -26,9 +27,11 @@
   <script src="/scripts/services/attr2_options.js"></script>
   <!-- endbuild -->
   <script src="/scripts/markerclusterer.js"></script>
+  
+  <script src="/libs/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
   <script src="/scripts/angular-pageslide-directive.js"></script>
-	<script src="/libs/d3/d3.js"></script>
-	<script src="/libs/angular-charts/dist/angular-charts.js"></script>
+  <script src="/libs/d3/d3.js"></script>
+  <script src="/libs/nvd3/nv.d3.js"></script>	
 	
 <link rel="stylesheet" type="text/css" href="/assets/main.css">
 
@@ -64,8 +67,10 @@
     
     	<div id="map-container" ng-controller="mapController">
     	  	<map zoom="4" center="[39.50, -98.35]"></map>
-			<div client-info class="custom-control">Client Info</div>
+			<div client-info class="custom-control">Client Info</div>		    
 		</div>
+		
+   		 </tab>
    	</tab>
     
     <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
@@ -73,7 +78,11 @@
     </tab>
   
     <tab heading="Client List: Graph View">
-     <div asset-mix-chart id="assetMixChart" style="width:100%"></div>
+    <div ng-controller="barChartController" id="barChart">
+        <div ng-repeat="client in allClients">
+          {{client.name.first}}
+        </div>
+      </div>
     </tab>
       <tab heading="Client List: Table View">
    			
