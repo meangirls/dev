@@ -134,15 +134,17 @@ $scope.colorFunction = function() {
 			$scope.transactions = [];
 			$http.get('/dashboard/client/' + this.id + '/accounts').success(function(data) {
 				$scope.accounts = data;
-				if (data.length > 0) {
-					var accountNumber = data[0].acctNbr;
+				for (var j=0;j<data.length; j++) {
+					var accountNumber = data[j].acctNbr;
 					if (this.alert) {
 						$http.get('/dashboard/alerts/' + accountNumber).success(function(alerts) {
-						$scope.alerts = alerts;
+						if (alerts.length > 0)
+							$scope.alerts = alerts;
 						})
 					}
 					$http.get('/dashboard/transactions/' + accountNumber).success(function(transactions) {
-						$scope.transactions = transactions;
+						if (transactions.length >0)
+							$scope.transactions = transactions;
 					})
 				}
 			});

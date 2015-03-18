@@ -6,6 +6,7 @@ var Account = require('./models/account');
 var Fund = require('./models/fund');
 var Alert = require('./models/alert');
 var Transaction = require('./models/transaction');
+var Allocation = require('./models/allocation');
 
     module.exports = function(app) {
 
@@ -81,6 +82,14 @@ var Transaction = require('./models/transaction');
                 if (err)
                     res.send(err);
                 res.json(trans); // return the alerts in JSON format
+			});
+		});
+		
+		app.get('/dashboard/allocations/:acctNbr', function(req, res) {
+			Allocation.find({acctNbr: req.params.acctNbr}, function(err, allocations) {
+                if (err)
+                    res.send(err);
+                res.json(allocations); // return the alerts in JSON format
 			});
 		});
         // route to handle creating goes here (app.post)
