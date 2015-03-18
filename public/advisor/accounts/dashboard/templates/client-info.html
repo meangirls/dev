@@ -1,18 +1,12 @@
-<pageslide ps-open="checked" ps-target="#client-info" ps-close="true" ps-custom-height="600px"></pageslide> 
+<pageslide ps-open="checked" ps-target="#client-info" ps-close="true"></pageslide> 
 <div style="padding:20px;" id="client-info" class="inverse">
                     
                
 <a class="hide-link close btn pull-right" ng-click="clientInfo.hide()" href=""><span class="icon"></span></a>
 
-<h3> {{client.name.first}} {{client.name.middle}} {{client.name.last}}</h3>
-<table class="row-seperators">
-<tr>
-  <td> Address </td> 
-  <td> {{client.address}} <br/> 
-    {{client.city}} {{client.postal_code}} {{client.country}} <br/>
-  </td>
-</tr>
-</table>
+<h2>{{client.name.first}} {{client.name.middle}} {{client.name.last}}</h2>
+<p>{{client.address}}<br />
+{{client.city}} {{client.postal_code}}</p>
 
 <a ng-show="panoId" href="" ng-click="showStreetView()">Street View</a>
 
@@ -39,7 +33,7 @@
 </div>
 		    
 		    
-<div id="notifications" class="section-margin">
+<div id="notifications" class="section-margin" ng-show="alerts">
 	<h3 class="hr hr-thick">Notifications</h3>
 	<div ng-repeat="alert in alerts">
 		<ul>
@@ -50,7 +44,8 @@
 	</h4>
 </div>
 
-<div id="transactions" class="section-margin">
+
+<div id="transactions" class="section-margin" ng-show="transactions">
 	<h3 class="hr hr-thick">Recent Transactions</h3>
 	<table class="row-separators full-width">
 		<thead>
@@ -72,6 +67,6 @@
 	</table>
 </div>
 
-<div><a class="button button-wide">Go to Client's Portfolio</a></div>
+<div><a class="btn btn-wide">Go to Client's Portfolio</a></div>
 
 </div>

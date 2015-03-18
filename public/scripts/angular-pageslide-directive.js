@@ -58,7 +58,8 @@ pageslideDirective.directive('pageslide', [
                 slider.style.transitionDuration = param.speed + 's';
                 slider.style.webkitTransitionDuration = param.speed + 's';
                 slider.style.zIndex = param.zindex;
-                slider.style.position = 'absolute';
+                //slider.style.position = 'absolute';
+                slider.style.position = 'fixed';
                 slider.style.width = 0;
                 slider.style.height = 0;
                 slider.style.transitionProperty = 'width, height';
@@ -92,8 +93,9 @@ pageslideDirective.directive('pageslide', [
 
 
                 /* Append */
-                //document.body.appendChild(slider);
-                document.getElementById("map-container").appendChild(slider);
+                document.body.appendChild(slider);
+                // ps-custom-height="600px"
+                //document.getElementById("map-container").appendChild(slider);
                 slider.appendChild(content);
 
                 /* Closed */
