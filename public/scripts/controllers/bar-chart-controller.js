@@ -25,14 +25,15 @@ app.controller('barChartController',  function($scope, $http) {
 //		                                            
 //
 		var options = {
-			colors: ["#33aee5"],
+			colors: ["#33aee5","#66C2EC"],
 			width: 1200,
 			height: 1500,
 			fontSize: 12,
 			//height: $scope.allClients.length * 20,
 			//chartArea: {'width': '100%', 'height': '80%'}
 			//height: 100
-			chartArea:{left:150,top:20,width:"100%",height:"100%"}
+			chartArea:{left:150,top:20,width:"100%",height:"100%"},
+			hAxis: {viewWindowMode: "pretty", titleTextStyle: {color: 'black', fontName: "Avenir Next LT W01 Demi", fontSize: "14px"}}
 		};
 //		
 		var chart = new google.visualization.BarChart(document.getElementById('barChart'));
