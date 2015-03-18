@@ -174,7 +174,7 @@ $scope.colorFunction = function() {
       legend.id = 'legend';
 
   var content = [];
-      content.push('<img src="/assets/images/legend.png"/>');
+      content.push('<img src="/assets/images/legend.png" />');
 
   legend.innerHTML = content.join('');
   legend.index = 1;
