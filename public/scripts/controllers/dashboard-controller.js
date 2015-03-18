@@ -101,8 +101,8 @@ app.config(function($sceProvider) {
             StreetView.getPanorama(map).then(function(panoId) {
               $scope.panoId = panoId;
             });
-            //map.setZoom(18);
-            //map.setCenter(this.getPosition());
+            map.setZoom(14);
+            map.setCenter(this.getPosition());
 			
 
 			
@@ -168,6 +168,22 @@ $scope.colorFunction = function() {
         //console.log('finished loading scripts/starbucks.json', '$scope.clients', $scope.clients.length);
         $scope.markerClusterer = new MarkerClusterer(map, $scope.clients, mcOptions);
         //$scope.fullScreenToggle.click();
+
+        //legend code
+        var legend = document.createElement('div');
+      legend.id = 'legend';
+
+  var content = [];
+      content.push('<img src="/assets/images/legend.png"/>');
+
+  legend.innerHTML = content.join('');
+  legend.index = 1;
+
+  // call the legend 
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(legend);
+
+
+        //legend code end
       });
     });
     $scope.showStreetView = function() {
