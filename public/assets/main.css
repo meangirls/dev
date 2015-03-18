@@ -2228,6 +2228,7 @@ a#oo_launch_prompt:hover{background:#096;}
 .ng-pageslide {
 	background: #fff;
 	border-left:1px solid #333;
+	overflow: scroll;
 }
 
 span.icon{display:inline-block;width:16px;height:1px;padding:8px 0 7px 0;margin:-8px 7px -8px 0;vertical-align:.35em;background:transparent url(/assets/images/icons@1x.png) no-repeat;content:"";}
