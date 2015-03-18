@@ -1,0 +1,14 @@
+[
+  {
+    "fundAbbreviation": "AMCAP",
+    "percent": 0.5
+  },
+  {
+    "fundAbbreviation": "BFA",
+    "percent": 0.25
+  },
+  {
+    "fundAbbreviation": "GFA",
+    "percent": 0.25
+  }
+]

@@ -27,8 +27,42 @@ var mcOptions = {
     maxZoom: 15
 };
 
-var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'pageslide-directive']);
 
+var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'pageslide-directive', 'nvd3ChartDirectives']);
+app.config(function($sceProvider) {
+  // Completely disable SCE.  For demonstration purposes only!!
+  // Do not use in new projects.
+  $sceProvider.enabled(false);
+});
+
+
+
+ function ExampleCtrl($scope){
+ 
+ $scope.xFunction = function(){
+    return function(d) {
+        return d.key;
+    };
+}
+
+ $scope.yFunction = function(){
+	return function(d){
+		return d.y;
+	};
+}
+
+ $scope.exampleData = [
+      	{ key: "One", y: 5 },
+         { key: "Two", y: 2 },
+         { key: "Three", y: 9 },
+        { key: "Four", y: 7 },
+        { key: "Five", y: 4 },
+        { key: "Six", y: 3 },
+       { key: "Seven", y: 9 }
+    ];
+ }
+
+    
   app.controller('mapController', function($scope, $http, StreetView) {
 	  
 	  $scope.checked;
@@ -40,43 +74,39 @@ var app = angular.module('myApp', ['ngMap', 'ui.bootstrap', 'pageslide-directive
 	  
     $scope.map;
     $scope.clients = [];
+    
     $scope.$on('mapInitialized', function(event, evtMap) {
       map = evtMap;
       $scope.map = map;
       console.log('loading scripts/clients.json');
-      $http.get('/advisor-dashboard/scripts/clients.json').success( function(clients) {
+      $http.get('/dashboard/clients').success( function(clients) {
+    	
         for (var i=0; i<clients.length; i++) {
           var client = clients[i];
           client.position = new google.maps.LatLng(client.latitude,client.longitude);
           client.title = client.name.first + " " + client.name.last + " " + client.address;
-          
-          if (client.markerImage == "large") {
-        	  client.icon = {
-        			  scale: 12,
-        			  path: google.maps.SymbolPath.CIRCLE,
-        		fillOpacity: 1,
-        		fillColor: 'red',
-        		strokeColor: '#333',
-        		strokeWeight: 2
-        	  }
-          }
-          else {
-        	  client.icon = {
-                	  path: google.maps.SymbolPath.CIRCLE,
-                  		scale: 8,
-                  		fillOpacity: 1,
-                  		fillColor: 'red',
-                		strokeColor: '#333',
-                  		strokeWeight: 2
-                  }
-          }
          
+    	  client.icon = {
+    		scale: (client.markerImage == "large") ? 12 : 8,
+    		path: google.maps.SymbolPath.CIRCLE,
+    		fillOpacity: 1,
+    		fillColor: (client.alert == true) ? 'yellow' : ((client.financialTransaction == true ? 'green' : 'red')),
+    		strokeColor: (client.alert == true && client.financialTransaction == true) ? 'green' : '#333',
+    		strokeWeight: (client.alert == true && client.financialTransaction == true) ? 5 : 2
+    	  }
+                 
 	  
           var marker = new google.maps.Marker(client);
 	  //marker.setIcon(client.markerImage);
 	  
           google.maps.event.addListener(marker, 'click', function() {
             $scope.client = this;
+			$http.get('/dashboard/alerts/79949426').success(function(alerts) {
+				$scope.alerts = alerts;
+			});
+			$http.get('/dashboard/transactions').success(function(transactions) {
+				$scope.transactions = transactions;
+			});
             StreetView.getPanorama(map).then(function(panoId) {
               $scope.panoId = panoId;
             });
